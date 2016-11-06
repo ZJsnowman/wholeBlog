@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 看见什么吃什么
 subtitle:
-description:
-author: John Doe
-language:
+description: 过一种有价值的中产阶级生活
+author: 张俊
+language:  zh-Hans
 timezone:
+avatar: /images/avatar.jpeg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -63,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yelee
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -71,3 +72,6 @@ deploy:
   type: git
   repo: https://github.com/ZJsnowman/ZJsnowman.github.io.git
   branch: master
+
+# Discuss
+duoshuo_shortname: zjsnowman
