@@ -1,3 +1,10 @@
+---
+title: TextView加载Html
+date: 2016-11-29 18:38:49
+tags: [Android]
+---
+
+作为自己对TextView加载Html的一些记录和注意事项<!-- more -->
 ## 需求
 有时候需要TextView显示一些简单的带格式的文字，比如带颜色。
 
