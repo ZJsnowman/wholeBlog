@@ -1,6 +1,6 @@
 ---
 title: GitLab+Jenkins+Tomcat构建服务器自动打包
-date: 2016-2-22 18:38:49
+date: 2017-2-22 12:30:49
 tags: [Android]
 ---
 
