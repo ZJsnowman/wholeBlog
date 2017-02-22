@@ -1,0 +1,14 @@
+
+---
+title: 牛逼的命令行
+date:2016-12-20 18:38:49
+tags:[Android]
+---
+
+在Android开发中，有时候会出现合并资源错误，这种多半是因为文件格式不对。通过下面的一个牛逼命令可以完美解决
+这个问题。
+
+```shell
+find . -type f -name "*.png" | xargs -L 1 -I{} file  -I {} | grep -v 'image/png; charset=binary$'
+```
+在Android项目的目录执行这个命令，可以找出所有以.png结尾，但是不是png文件的文件。
