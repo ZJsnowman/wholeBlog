@@ -35,7 +35,7 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 意思就是说当 gitlab 上有新的提交或者其他条件的时候会触发 jenkins 编译。具体配置可以参考 gitlab hook 插件说明。我这边是在 gitlab - prpject - setting - webHooks中添加一个 url。具体如下：
 ```
 
-http://your-jenkins-server/gitlab/notify_commit
+http://your-jenkins-server/gitlab/build_now
 ```
 这里需要注意，如果你 jenkins具体项目编译配置中配置了具体的分支，那么只有你在配置的分支上 push 你代码才能触发钩子。test hook 默认是在 master 上触发的。这点需要注意。举个例子：
 假如你 Jenkins 配置中是编译 dev 分支的，那么 test hook 是不会生效的。必须手动在 dev 分支上提交一个代码才能触发自动编译。
