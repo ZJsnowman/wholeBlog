@@ -47,3 +47,8 @@ http://your-jenkins-server/gitlab/notify_commit
 
 ### 一些问题
 一般来说 gradle.propertity 文件是加入忽略的。里面配置了gradle 需要读取的一些配置文件和代理设置。考虑到服务器的代理和本机代理不一致。这个需要加入忽略，然后服务端手动加入这儿文件。将里面的代理部分改成服务器端的配置，其他配置保留。另外 local.propertity里面会存放用户 sdk 和 ndk 目录的位置，这个最好也是加入忽略。服务端手动配置上去。配置成服务端的 sdk 目录和 ndk 目录。
+
+### submodule
+考虑到一些项目会有 submodule，这个时候需要做一些额外的配置。
+![](https://ww2.sinaimg.cn/large/006tNc79gy1fd0gbr0u9zj31660kawgs.jpg)
+在源码管理模块添加一个 submodule 设置。勾选上递归更新 submodule 和 用父目录的证书（这是 jenkins 的一个 bug）。第二个勾选框是为了解决 submodule 认证失败的 bug。
