@@ -1,5 +1,5 @@
 ---
-title: hexo
+title: hexo使用笔记
 date: 2017-06-16 09:14:24
 tags: [others]
 ---
