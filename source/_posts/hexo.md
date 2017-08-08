@@ -20,9 +20,16 @@ hexo 图床引用比较简单，一般好一点图床有七牛，微博。一般
 ## 日常改动流程
 在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。
 
-1. 依次执行git add .、git commit -m "xxx"、git push origin master指令将改动推送到GitHub博客原始文件仓库（地址是：```git@github.com:ZJsnowman/wholeBlog.git```）
+1. 依次执行git add .、git commit -m "xxx"、git push origin master指令将改动推送到GitHub博客原始文件仓库（地址是：
+```
+git@github.com:ZJsnowman/wholeBlog.git
+```
+）
 2. 然后才执行hexo g -d发布网站，这个发布的是整个生成后的托管在 git上的地址（地址是:
-```git@github.com:ZJsnowman/ZJsnowman.github.io.git```  是配置在 config 文件中的）
+```
+git@github.com:ZJsnowman/ZJsnowman.github.io.git
+```
+ 是配置在 config 文件中的）
 
 *这里需要理解透彻这两个仓库的用途，也就明白了这一套规则*
 
