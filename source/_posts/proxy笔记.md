@@ -39,7 +39,7 @@ PS:在Chrome下PAC规则用的是switch Omega维护的那个.在非Chrome情况�
 
 
 ## OSX shadowsocksX-NG 局域网走本机代理
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fi7x4xbdsxj30bm0c6752.jpg)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk18uftpj30bm0c6gma.jpg)
 OSX 下shadowsocksX-NG 没有本机代理的设置.所以可以将上图中中HTTP代理监听地址由
 ```
 127.0.0.1
@@ -68,6 +68,6 @@ function proxy_on() {
 ```
 ### 使用方法
 当要使用代理时先运行proxy_on 函数.
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi7zab6hk3j30vo0qawgz.jpg)
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fidk1aiqk5j30vo0qadib.jpg)
 不需要翻墙的时候运行proxy_of函数即可.
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi7zbuac0gj30vk0hc0v7.jpg)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk1bzj6mj30vk0hcq5g.jpg)

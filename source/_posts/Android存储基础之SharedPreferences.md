@@ -7,7 +7,7 @@ tags: [Android]
   总结一下Android最常用存储SharedPreferences<!-- more -->
 
 ## 导图
-![sp使用](http://octp5qa2i.bkt.clouddn.com/SharedPreferences%E7%9A%84%E4%BD%BF%E7%94%A8.png)
+![sp使用](https://ws3.sinaimg.cn/large/006tKfTcgy1fidjzp48kqj30ne06ljrf.jpg)
 ## 准备
 
 一些基本使用方法,这里就不过多介绍,大家可以参考[官方文档](https://developer.android.com/training/basics/data-storage/shared-preferences.html).
@@ -33,7 +33,7 @@ int value = preferences.getInt("random", 0);
 ## 如何调试
 sp在我看来就是一种简单的存储方式,本身还是io操作.sp文件也是常见的xml文件,也就是是说我们完全可以通过io的方式来访问sp文件,其实就是解析xml文件.只是没有这个必要,直接使用sp提供的api很方便简洁.生成的sp文件放在**data/data/<package name>/shared_prefs**目录下,可以通过模拟器直接打开,如果是真机需要root才能访问.为了方便调试,facebook提供了一个方便的工具,[stetho](http://facebook.github.io/stetho/).可以直接在浏览器中查看app中的创建的sp文件.非常方便.效果如下
 
-![](http://octp5qa2i.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720161111152721.jpg)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidjzqsi9wj316x0hs40x.jpg)
 
 ## apply和commit的区别
 - commit这种方式很常用,api**1**中就已经加入了.这个提交修改方式是同步的,会阻塞调用它的线程,并且这个方法会返回boolean值告知保存是否成功（如果不成功，可以做一些补救措施）。

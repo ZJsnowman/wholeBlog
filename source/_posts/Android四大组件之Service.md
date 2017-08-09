@@ -7,7 +7,7 @@ tags: [Android]
  关于Service你所应该知道的一切<!-- more -->
 
 ## 导图
-![](http://octp5qa2i.bkt.clouddn.com/16-9-1/24576995.jpg)
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fidjzna30uj3107075wer.jpg)
 
 ##   服务的两种形式 ##
 - 启动
@@ -190,7 +190,7 @@ startService(intent);
 多个客户端可以同时绑定到服务。客户端完成与服务的交互后，会调用 unbindService() 取消绑定。一旦没有客户端绑定到该服务，系统就会销毁它。
 
 ## 生命周期
-![生命周期](http://octp5qa2i.bkt.clouddn.com/16-9-1/21363577.jpg)
+![生命周期](https://ws4.sinaimg.cn/large/006tKfTcgy1fidjzon7obj30at0e3abt.jpg)
 
 - 服务的整个生命周期从调用 onCreate() 开始起，到 onDestroy() 返回时结束。与 Activity 类似，服务也在 onCreate() 中完成初始设置，并在 onDestroy() 中释放所有剩余资源。例如，音乐播放服务可以在 onCreate() 中创建用于播放音乐的线程，然后在 onDestroy() 中停止该线程。
 无论服务是通过 startService() 还是 bindService() 创建，都会为所有服务调用 onCreate() 和 onDestroy() 方法。

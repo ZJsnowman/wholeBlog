@@ -76,7 +76,7 @@ event.getRawX();    //触摸点相对于屏幕默认坐标系的坐标
 event.getRawY();
 ```
 
-![](https://ww4.sinaimg.cn/large/006tNbRwgw1fbfinguu50j308c0dw74q.jpg)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk1coxlgj308c0dw74q.jpg)
 
 ### 颜色
 颜色一般都是四个通道(ARGB)的，其中(RGB)控制的是颜色,而A(Alpha)控制的是透明度。因为我们的显示屏是没法透明的，因此最终显示在屏幕上的颜色里可以认为没有Alpha通道。Alpha通道主要在两个图像混合的时候生效。

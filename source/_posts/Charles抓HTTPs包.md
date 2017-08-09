@@ -13,10 +13,10 @@ tags: [others]
 上面推荐的链接中已经说了如何抓 https 包，这里主要是**修正**一下。我这里使用的 Charle 版本是
 V4.0.2.
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi492ypdkqj317a08y0tx.jpg)
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidjzs196tj317a08yq41.jpg)
 
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi4973z0lxj30qw0g8dhd.jpg)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidjzt481aj30qw0g83zv.jpg)
 
 这里需要注意的是手机设置代理的时候不要设置成**bridge100**的地址.而是设置成**en0**地址。
 否则手机安装不上证书。
