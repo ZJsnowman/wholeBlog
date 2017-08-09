@@ -74,4 +74,7 @@ deploy:
   branch: master
 
 # Discuss
-duoshuo_shortname: zjsnowman
+disqus_shortname: ZJsnowman
+
+# Analytics
+google_analytics: 104303218
