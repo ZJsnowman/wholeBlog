@@ -3,6 +3,7 @@ title: Atom打造完美Markdown编辑器
 date: 2017-08-09 15:28
 tags: [others]
 ---
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fii0j2l1ejj317c0go75z.jpg)
 自己通过Atom编辑器配合一些插件,满足自己通过markdown在hexo写博客的需求<!--more-->
 
 ## hexo插件
