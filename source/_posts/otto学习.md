@@ -1,5 +1,5 @@
 ---
-title: otto 学习笔记
+title: Otto 学习笔记
 date: 2017-3-16 18:38:49
 tags: [Android]
 ---

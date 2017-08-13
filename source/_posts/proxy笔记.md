@@ -1,5 +1,5 @@
 ---
-title: proxy笔记
+title: Proxy笔记
 date: 2017-08-04 20:49:19
 tags: [others]
 ---
