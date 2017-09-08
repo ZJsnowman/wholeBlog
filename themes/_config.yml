@@ -43,7 +43,7 @@ menu:
 #   Key is the name of menu item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
-  enable: false
+  enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
@@ -123,8 +123,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/ZJsnowman
+  Twitter: https://twitter.com/zjsnowman
+  zhihu: https://www.zhihu.com/people/ZJsnowman
 
 
 # Social Links Icons
@@ -138,7 +140,8 @@ social_icons:
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  #Weibo: weibo
+  zhihu: quora
 
 
 # Sidebar Avatar
@@ -308,9 +311,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 1m1SVHmQhKszN3lTe3rKgo87-gzGzoHsz
+  app_key: i9e5m0oHfrGz1EzsarxpYbh2
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -416,8 +419,3 @@ images: images
 
 # Theme version
 version: 5.0.2
-
-leancloud_visitors:
-  enable: true
-  app_id: 1m1SVHmQhKszN3lTe3rKgo87-gzGzoHsz
-  app_key: i9e5m0oHfrGz1EzsarxpYbh2

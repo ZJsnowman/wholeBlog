@@ -1,7 +1,7 @@
 ---
 title: Android 安全
 date: 2017-09-06 12:51:30
-tags: [Anroid]
+tags: [Android]
 ---
 Android一些高危漏洞的解释与修复<!--more-->
 

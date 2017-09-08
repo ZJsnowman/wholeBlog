@@ -13,7 +13,7 @@ avatar: /images/avatar.jpeg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://zjsnowman.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -75,3 +75,10 @@ deploy:
 
 # Discuss
 disqus_shortname: ZJsnowman
+
+# Search
+algolia:
+  applicationID: 'V6UP91GVT8'
+  apiKey: '8daad537a1f6614371b396ea53d7184a'
+  indexName: 'prod_Blog'
+  chunkSize: 5000

@@ -70,3 +70,14 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fii3bnh2gyj30g90ckwen.jpg)
 将`.deploy_git/.git`下ignorecase=true 改为false.这样git就会记录大小写了.
 因为我这个本身也在git管理中,所以将hexo 根目录下的一个.git目录里面的config文件修改一下.
+
+## hexo 添加搜索
+[参考官方集成文档](http://theme-next.iissnan.com/third-party-services.html#search-system)
+
+ ps:这里我 next 版本为5.1.2.在按照官方操作的时候需要补充一点:
+ 1. 不需要输入 adminApiKey: 'adminApiKey' ,可以删掉.
+ 2. 需要在 algilia 再创建一个API Key ![](https://ws3.sinaimg.cn/large/006tNc79gy1fjc2j8a7wwj31kw0iydij.jpg)
+ 可以参考[hexo-algolia官方 github](https://github.com/oncletom/hexo-algolia)
+另外关于有些会出现搜索结果跳转不到文章url 显示 yoursite.com.
+原因是因为没有设置 url.设置好 **网站** 的配置文件的 url 参数就可以了.需要时完整的,加上协议头 http
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fjc2nvhq2vj31bs0cq74v.jpg)
