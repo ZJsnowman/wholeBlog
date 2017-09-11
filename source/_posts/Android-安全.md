@@ -21,6 +21,28 @@ Activity。如果这个Activity是登录界面，那么就可以从中获取用�
  的界面，普通用户根本无法识别是真的还是假。用户输入用户名和密码之后，恶意程序就可以悄无声息的
  把用户信息上传到服务器了。这样是非常危险的。
 
+ # 如何劫持的
+参考 HackService
+
+# 如何反劫持
+使用 AntiHijackingUtil 即可.
+用法很简单，只需要在需要使用检测方法的Activity的onStop()方法中调用工具类的checkActivity()方法，接收返回
+的boolean值进行判断即可，下面是一个简单示例：
+```
+@Override
+protected void onStop() {
+    super.onStop();
+    boolean safe = AntiHijackingUtil.checkActivity(this);
+    if (safe){
+        Toast.markText(this, "安全", Toast.LENGTH_LONG).show;
+    } else {
+        Toast.makeText(this, "不安全", Toast.LENGTH_LONG).show;
+    }
+}
+```
+[代码地址](https://github.com/ZJsnowman/HackAndroid)
+
+
 
  # webView远程执行
 [webview高危漏洞](http://www.jianshu.com/p/3a345d27cd42)
