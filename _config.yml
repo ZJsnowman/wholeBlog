@@ -70,7 +70,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ZJsnowman/ZJsnowman.github.io.git
+  repo:
+    github:  https://github.com/ZJsnowman/ZJsnowman.github.io.git
+    coding:  https://git.coding.net/ZJsnowman/ZJsnowman.coding.me.git
   branch: master
 
 # Discuss

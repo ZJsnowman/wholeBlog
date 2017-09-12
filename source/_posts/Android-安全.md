@@ -46,6 +46,37 @@ protected void onStop() {
 
  # webView远程执行
 [webview高危漏洞](http://www.jianshu.com/p/3a345d27cd42)
+总结一句话,升级到 api19(4.4)以上.添加 @JavascriptInterface注解
 
 # https 证书问题
 采用 chrome 浏览器的策略
+具体代码:
+```
+@Override
+           public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
+//                super.onReceivedSslError(view, handler, error);
+               Logger.e(error.toString());
+               Logger.i("OnReceiveSsl Thread is " + Thread.currentThread().getId());
+               AlertDialog.Builder builder = new AlertDialog.Builder(HyBirdActivity.this)
+                       .setTitle("Warning")
+                       .setMessage("您的连接不是私密连接")
+                       .setPositiveButton("继续访问", new android.content.DialogInterface.OnClickListener() {
+                           @Override
+                           public void onClick(android.content.DialogInterface dialog, int which) {
+                               dialog.dismiss();
+                               Logger.i("OnReceiveSsl Dialog is " + Thread.currentThread().getId());
+                               handler.proceed();
+
+                           }
+                       }).setNegativeButton("No", new android.content.DialogInterface.OnClickListener() {
+                           @Override
+                           public void onClick(android.content.DialogInterface dialog, int which) {
+
+                               dialog.dismiss();
+                               finish();
+                           }
+                       });
+               builder.show();
+
+           }
+```
