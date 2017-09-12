@@ -81,3 +81,7 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 另外关于有些会出现搜索结果跳转不到文章url 显示 yoursite.com.
 原因是因为没有设置 url.设置好 **网站** 的配置文件的 url 参数就可以了.需要时完整的,加上协议头 http
 ![](https://ws4.sinaimg.cn/large/006tNc79gy1fjc2nvhq2vj31bs0cq74v.jpg)
+
+## hexo 添加域名
+https://www.zhihu.com/question/19551906
+https://www.zhihu.com/question/31377141
