@@ -320,7 +320,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: a066e64c0c61dd47282927a43933e6d8
+#baidu_analytics: a066e64c0c61dd47282927a43933e6d8
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -368,7 +368,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics: UA-104303218-1
+google_analytics: UA-104303218-1
 
 
 # Yandex Webmaster tools verification setting
