@@ -13,7 +13,7 @@ avatar: /images/avatar.jpeg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://zjsnowman.github.io
+url: http://zjsnowman.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
