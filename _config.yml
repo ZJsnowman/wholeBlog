@@ -75,8 +75,6 @@ deploy:
     coding:  https://git.coding.net/ZJsnowman/ZJsnowman.coding.me.git
   branch: master
 
-# Discuss
-disqus_shortname: ZJsnowman
 
 # Search
 algolia:

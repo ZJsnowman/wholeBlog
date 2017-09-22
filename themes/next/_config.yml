@@ -327,7 +327,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: ZJsnowman
   count: true
 
