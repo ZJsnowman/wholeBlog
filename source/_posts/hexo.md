@@ -85,3 +85,14 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 ## hexo 添加域名
 https://www.zhihu.com/question/19551906
 https://www.zhihu.com/question/31377141
+
+## hexo 跳过渲染,使用自定义网页
+1. source目录新建 local 目录,在 local 目录下存放自定义的 html 文件.
+2. 在网站 config 文件中找到`skip_render:`设置,添加如下设置:
+```yml
+skip_render:
+  - local/*
+```
+3. 自行超链接应用,具体链接为你的域名/local/你的自定义 html 文件.html
+
+*具体例子,参考 python 使用备注中 map 使用备注一项.*

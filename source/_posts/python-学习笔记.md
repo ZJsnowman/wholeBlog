@@ -19,3 +19,9 @@ tags: [数据分析]
 这种用法表示Python中特殊的方法名。其实，这只是一种惯例，对Python系统来说，这将确保不会与用户自定义的名称冲突
 
 [详细点击](http://python.jobbole.com/81129/)
+
+# Map使用备注
+[点我查看](http://zjsnowman.com/local/python%E5%AD%97%E5%85%B8%E4%BD%BF%E7%94%A8%E5%A4%87%E6%B3%A8.html)
+
+# Python中的下划线
+[点我查看](http://zjsnowman.com/local/Python%E4%B8%AD%E7%9A%84%E4%B8%8B%E5%88%92%E7%BA%BF)

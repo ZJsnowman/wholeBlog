@@ -15,3 +15,6 @@ plugins=(git autojump osx zsh-syntax-highlighting git-extras zsh-autosuggestions
 
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+# 更加友好的 find
+[官方 github](https://github.com/sharkdp/fd)

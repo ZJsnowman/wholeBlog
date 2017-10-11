@@ -52,3 +52,7 @@ http://your-jenkins-server/gitlab/build_now
 考虑到一些项目会有 submodule，这个时候需要做一些额外的配置。
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidjzmjfsij31660kawgm.jpg)
 在源码管理模块添加一个 submodule 设置。勾选上递归更新 submodule 和 用父目录的证书（这是 jenkins 的一个 bug）。第二个勾选框是为了解决 submodule 认证失败的 bug。
+
+
+#### 也许会有用的链接
+https://mp.weixin.qq.com/s?sn=e9bdff7cb91b0eabbe67ec965f3be660&mid=2247487305&__biz=MzIwMzYwMTk1NA%3D%3D&utm_medium=email&utm_source=gank.io&idx=1

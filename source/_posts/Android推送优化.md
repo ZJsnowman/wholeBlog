@@ -104,9 +104,14 @@ App的客户端拿到它之后，必须要同步到自己的服务器，并与�
 - 更快，是因为你交给第三方推送平台的推送消息要跟很多其它家App的消息一起排队。如果某家App突然在短时间内发送大量推送消息给推送平台（推广活动，或者程序bug），那么这个推送平台上的其它App就有可能受到牵连，推送延迟变得很大。这样的情况是很可能会发生的。
 - 更有保障。大厂通常有专门的队伍维护推送相关的服务，有问题可以快速推进优化。
 
-<!-- #### 学习链接
+-- #### 学习链接
+
 [什么叫做到达率](http://bbs.umeng.com/thread-8933-1-1.html)
 
 [关于推送你应该知道的一切](http://blog.csdn.net/eclipsexys/article/details/52575602#t7)
 
-[混合推送你应该知道的一切](https://juejin.im/post/57a19c012e958a0066715d0c)-->
+[混合推送你应该知道的一切](https://juejin.im/post/57a19c012e958a0066715d0c)
+
+[Android通知栏介绍与适配总结](http://iluhcm.com/2017/03/12/experience-of-adapting-to-android-notifications/)
+
+[App判断通知屏蔽并请求跳转设置](http://feihu.blog/?p=524)
