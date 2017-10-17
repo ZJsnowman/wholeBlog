@@ -80,7 +80,7 @@ deploy:
 
 # Search
 algolia:
-  applicationID: 'V6UP91GVT8'
-  apiKey: '8daad537a1f6614371b396ea53d7184a'
-  indexName: 'prod_Blog'
+  applicationID: 'AEDNVYBRXD'
+  apiKey: '8b0fd63b8531c6673fc8ec50b80429ef'
+  indexName: 'prod_blog'
   chunkSize: 5000

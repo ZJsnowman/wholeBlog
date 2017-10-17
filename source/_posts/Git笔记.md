@@ -60,3 +60,11 @@ $ git branch -vv
 [参考github 官方](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 2. 同步 fork
 [参考官方](https://help.github.com/articles/syncing-a-fork/)
+
+# github优化建议
+- README 各种标签
+- 项目进度
+- Gif 录制
+- MD icon 制作
+
+[点我查看](https://mp.weixin.qq.com/s?sn=744a9ebc0425fb3fa17c3f62eb59e421&mid=2247487344&__biz=MzIwMzYwMTk1NA%3D%3D&utm_medium=email&utm_source=gank.io&idx=1)

@@ -25,3 +25,31 @@ tags: [数据分析]
 
 # Python中的下划线
 [点我查看](http://zjsnowman.com/local/Python%E4%B8%AD%E7%9A%84%E4%B8%8B%E5%88%92%E7%BA%BF)
+
+# Python 文件读写,操作文件和目录,序列化
+廖老师的网站
+
+# Python 高级特性
+## Python列表生成式
+>```
+>>> [x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+>写列表生成式时，把要生成的元素x * x放到前面，后面跟for循环，就可以把list创建出来.
+
+再次基础上可以在对`x`进行筛选
+```
+>>> [x * x for x in range(1, 11) if x % 2 == 0]
+[4, 16, 36, 64, 100]
+```
+使用多个变量生成 list
+```
+>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }
+>>> [k + '=' + v for k, v in d.items()]
+['y=B', 'x=A', 'z=C']
+```
+多次循环
+```
+>>> [m + n for m in 'ABC' for n in 'XYZ']
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+```
