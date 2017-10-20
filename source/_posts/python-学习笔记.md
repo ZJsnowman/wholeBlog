@@ -58,3 +58,8 @@ tags: [数据分析]
 
 # Python yidld 使用
 https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851243000
+
+
+# Python 数据解析
+## Xml 解析
+[点我查看](http://zjsnowman.com/local/Xml%E8%A7%A3%E6%9E%90)
