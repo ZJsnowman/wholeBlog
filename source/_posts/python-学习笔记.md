@@ -53,3 +53,8 @@ tags: [数据分析]
 >>> [m + n for m in 'ABC' for n in 'XYZ']
 ['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
 ```
+## 迭代器和生成器
+[廖老师-高级特性](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143178254193589df9c612d2449618ea460e7a672a366000)
+
+# Python yidld 使用
+https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851243000
