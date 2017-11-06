@@ -29,5 +29,9 @@ ps:双引号是注释
 - g_ → 到本行最后一个不是blank字符的位置。
 - /pattern → 搜索 pattern 的字符串（陈皓注：如果搜索出多个匹配，可按n键到下一个）
 
+## Undo/Redo
+- u → undo
+- Ctrl + r → redo
+
 ### 学习链接
 [浩哥的vim简明教程](http://coolshell.cn/articles/5426.html)

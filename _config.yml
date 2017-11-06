@@ -74,7 +74,7 @@ deploy:
   type: git
   repo:
     github:  https://github.com/ZJsnowman/ZJsnowman.github.io.git
-    coding:  https://git.coding.net/ZJsnowman/ZJsnowman.coding.me.git
+    # coding:  https://git.coding.net/ZJsnowman/ZJsnowman.coding.me.git
   branch: master
 
 
