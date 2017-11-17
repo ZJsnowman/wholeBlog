@@ -63,3 +63,43 @@ https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851
 # Python 数据解析
 ## Xml 解析
 [点我查看](http://zjsnowman.com/local/Xml%E8%A7%A3%E6%9E%90)
+
+
+
+## Python
+- python原生字符串
+
+字符串无需再赘言，原生字符串可以在字符串之前加上一个r或者R来表示，例如r'\nThis is a raw string'。原生字符串不会对字符串进行任何特殊处理，例如r'\nThis is a raw string'中的\n不会被转义处理，而是直接代表\和n两个字符。
+
+*这个特性在正则表达式中非常好用,来应对反斜杠问题*
+
+
+## Python 爬虫
+[参考这个](http://wiki.jikexueyuan.com/project/python-crawler-guide/)
+
+### 关于正则表达式贪婪与非贪婪
+[参考这个](http://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p07_specify_regexp_for_shortest_match.html)
+这里非贪婪实际上就是最短匹配模式.贪婪则是尽可能长长的匹配.把这两者和路径长度联系起来理解
+
+```python
+__author__ = 'ZJsnowman'
+# -*- coding:utf-8 -*-
+```
+在Pycharm 中文件最开头需要加入上述语句,不然中文注释会有问题.
+
+### Python 头部声明,编码声明
+https://www.python.org/dev/peps/pep-0263/
+
+### Python 编码问题
+- ASCII，Unicode 和 UTF-8 之间的关系
+
+记住一句话:UTF-8 是 Unicode 的实现方式之一。
+剩下的参考[这个](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+- Python 编码最佳实践
+
+[参考这个](http://wklken.me/posts/2013/08/31/python-extra-coding-intro.html)
+
+总结一下就是:
+1. Decode early
+2. Unicode everywhere
+3. Encode later
