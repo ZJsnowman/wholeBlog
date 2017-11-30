@@ -4,7 +4,7 @@ date: 2017-11-29 13:56:44
 tags:
 ---
 
-
+Django 学习备注<!--more-->
 # 部署
 线上采用的 Centos+uWSGI+Nginx 进行部署
 整个通信过程如下:
