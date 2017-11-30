@@ -30,3 +30,5 @@ MQ是消费-生产者模型的一个典型的代表，一端往消息队列中�
 
 # ActiveMQ 用 Python 如何实现收发
 [官方推荐的客户端](https://github.com/jasonrbriggs/stomp.py)
+
+ps: 注意通读官方 github ,包括 issue(补充说明 doc 考虑不到的问题),doc,CI(查看 python 版本适配情况)
