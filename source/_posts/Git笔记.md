@@ -68,3 +68,10 @@ $ git branch -vv
 - MD icon 制作
 
 [点我查看](https://mp.weixin.qq.com/s?sn=744a9ebc0425fb3fa17c3f62eb59e421&mid=2247487344&__biz=MzIwMzYwMTk1NA%3D%3D&utm_medium=email&utm_source=gank.io&idx=1)
+
+
+# git 大文件处理方案
+[git lfs](https://git-lfs.github.com/)
+具体案列可以[参考](https://github.com/ZJsnowman/data_analysis),
+这里我将所有的 pdf 用 git lfs管理起来.具体可以进到 pdf 详情界面
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fm5q3g0iqwj31kw0ghdja.jpg)
