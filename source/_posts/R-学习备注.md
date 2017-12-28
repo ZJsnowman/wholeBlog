@@ -31,3 +31,7 @@ raddit$age.range<-ordered(raddit$age.range,levels=c( "Under 18", "18-24", "25-34
 
 raddit$age.range<-factor(raddit$age.range,levels=c( "Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65 or Above"),ordered = T)
 ```
+
+
+## 学习资料
+https://mubu.com/edit/1E9flQqdW1

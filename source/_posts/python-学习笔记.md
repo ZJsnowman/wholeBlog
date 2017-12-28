@@ -103,3 +103,49 @@ https://www.python.org/dev/peps/pep-0263/
 1. Decode early
 2. Unicode everywhere
 3. Encode later
+
+
+## 函数参数
+python 有四种参数类型
+- 必选参数
+- 默认参数
+- 可变参数
+- 关键字参数
+
+参数定义的顺序必须是：必选参数、默认参数、可变参数和关键字参数。
+
+\*args是可变参数，args接收的是一个tuple；
+
+\**kw是关键字参数，kw接收的是一个dict。
+
+[参考廖老师的教程](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738449338c8a122a7f2e047899fc162f4a7205ea3000)
+
+
+# pip 安装指定版本包,并显示所有可选包
+
+For pip >= 9.0 use
+```
+$ pip install pylibmc==
+Collecting pylibmc==
+  Could not find a version that satisfies the requirement pylibmc== (from
+  versions: 0.2, 0.3, 0.4, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5, 0.6.1, 0.6,
+  0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7, 0.8.1, 0.8.2, 0.8, 0.9.1, 0.9.2, 0.9,
+  1.0-alpha, 1.0-beta, 1.0, 1.1.1, 1.1, 1.2.0, 1.2.1, 1.2.2, 1.2.3, 1.3.0)
+No matching distribution found for pylibmc==
+– all the available versions will be printed without actually downloading or installing any additional packages.
+```
+For pip < 9.0 use
+
+`pip install pylibmc==blork`
+
+where blork can be any string that is not likely to be an install candidate.
+
+
+
+# python注意点
+只有1个元素的tuple定义时必须加一个逗号,来消除歧义：
+```python
+>>> t = (1,)
+>>> t
+(1,)
+```

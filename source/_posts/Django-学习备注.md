@@ -5,6 +5,62 @@ tags:
 ---
 
 Django 学习备注<!--more-->
+
+# 创建应用
+- 创建项目
+- 创建应用
+- 设置数据库
+- 创建模型
+- 激活模型
+- 通过 Django shell 测试 Django API
+
+[参考链接](http://python.usyiyi.cn/translate/django_182/intro/tutorial01.html)
+
+# Django admin 管理(对内视图)
+- 创建管理员账户
+- 让应用在管理界面课编辑(添加注册)
+- 探索功能
+ - Django 知道根据 model 字段的类型来显示不同的样式
+ - 如果时间参数不对,要设置 TIME_ZONE参数
+- 自定义管理界面,通过在 admin 中设置 admin  class
+- 添加关联对象 (如果对象之间有关联关系) `inlines`
+- 自定义管理界显示参数 `list_display`
+- 自定义管理界面外观,通过覆盖模板html
+
+# Django对外视图开发
+- 配置 url
+- shortcut 指 render
+- shortcut 之get_object_or_404
+- Django动态生成 html 模板
+- url配置命名空间,避免硬编码
+
+# Django 表单处理
+
+
+# Django 测试
+- 视图测试
+- 配合 Coverage 测试代码覆盖率
+>把测试覆盖作为质量目标没有任何意义，而我们应该把它作为一种发现未被测试覆盖的代码的手段
+
+
+
+# 静态文件处理
+- 如何处理 css 文件
+- 添加图片
+
+
+# 编写可重用的应用
+就是可以方便打包上传,人家也可以很方便的通过 pip 安装使用
+就要求代码里面不要有硬编码.
+在 template 使用 url 标签
+在 views 使用 reverse()函数
+
+- 如何打包应用
+- 测试自己打包应用
+- 发布应用
+- [上传教程](https://packaging.python.org/tutorials/distributing-packages/#uploading-your-project-to-pypi)
+
+
 # 部署
 线上采用的 Centos+uWSGI+Nginx 进行部署
 整个通信过程如下:
@@ -91,3 +147,19 @@ server {
 ```
 
 [参考官方部署文档](https://uwsgi.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
+
+## 代码覆盖率的意义
+分析未覆盖部分的代码，从而反推在前期测试设计是否充分，没有覆盖到的代码是否是测试设计的盲点，为什么没有考虑到？需求/设计不够清晰，测试设计的理解有误，工程方法应用后的造成的策略性放弃等等，之后进行补充测试用例设计。
+检测出程序中的废代码，可以逆向反推在代码设计中思维混乱点，提醒设计/开发人员理清代码逻辑关系，提升代码质量。
+代码覆盖率高不能说明代码质量高，但是反过来看，代码覆盖率低，代码质量不会高到哪里去，可以作为测试自我审视的重要工具之一。
+
+# web 开发 常见情况
+这些视图反映基本的Web开发中的一个常见情况：根据URL中的参数从数据库中获取数据、载入模板文件然后返回渲染后的模板。
+
+
+# Django  url 标签和 reverse 函数使用
+在 template 使用 url 标签
+在 views 使用 reverse()函数
+本质上都是为了避免硬编码.不然如果后期 url 变了,这需要改很多地方
+
+[参考](http://www.cnblogs.com/ajianbeyourself/p/4937951.html)
