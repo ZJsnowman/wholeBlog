@@ -148,6 +148,27 @@ server {
 
 [参考官方部署文档](https://uwsgi.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
 
+## 不要乱用 root 权限
+
+## 提权(遇到权限不够,)
+```
+chmod +x miniconda2/ -R
+```
+
+## uwsgi 提示找不到应用
+
+注意 wsgi 文件路径要写全路径
+
+```shell
+uwsgi --http :8001 --chdir /home/opmm/mq/riskcontrol_model --home=/root/miniconda2/envs/mq --wsgi-file /home/opmm/mq/riskcontrol_model/riskcontrol_model/wsgi.py
+```
+
+## socket 通信的时候不生效
+要把当前用户的组权限提生来
+```shell
+chmod 755 opmm
+```
+
 ## 代码覆盖率的意义
 分析未覆盖部分的代码，从而反推在前期测试设计是否充分，没有覆盖到的代码是否是测试设计的盲点，为什么没有考虑到？需求/设计不够清晰，测试设计的理解有误，工程方法应用后的造成的策略性放弃等等，之后进行补充测试用例设计。
 检测出程序中的废代码，可以逆向反推在代码设计中思维混乱点，提醒设计/开发人员理清代码逻辑关系，提升代码质量。

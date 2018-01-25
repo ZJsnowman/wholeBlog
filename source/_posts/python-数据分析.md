@@ -63,3 +63,33 @@ print np.vstack((np_list1,np_list2))   //Stack arrays in sequence vertically
 print np.hstack((np_list1,np_list2))  //Stack arrays in sequence horizontally
 print np.split(np_list,2)  //拆分数组
 ```
+
+
+# SciPy
+[官网](https://www.scipy.org/)
+
+
+# Pandas
+[官网](https://pandas.pydata.org/)
+## Series/DataFrame初始化
+`s=pd.Series((i*2 for i in range(1,11)),dtype=float)`
+
+```python
+datas = pd.date_range('20180115',periods=8)
+pf = pd.DataFrame(np.random.randn(8,4),index=datas,columns=list('ABCD'))`
+```
+## 基本操作
+- `pf.head(3)`   前三行
+- `pf.tail(3)`   后三行
+- `pf.index`     返回 index
+- `pf.values`    返回 value
+- `pf.T`    转置
+- `pf.describe()` 返回数据描述
+- `pf.loc[]`  索引选择
+- `pf.iloc[]`  位置选择
+- `pf.at[]`
+
+## 缺失值处理
+
+## 
+# Matplotlib

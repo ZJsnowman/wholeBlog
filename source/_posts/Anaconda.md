@@ -71,6 +71,12 @@ Conda 还会自动为你安装依赖项。例如，scipy 依赖于 numpy，因�
 ## Conda 安装
 [参考官方文档](https://conda.io/docs/user-guide/install/index.html#installing-conda-on-a-system-that-has-other-python-installations-or-packages)
 
+## Conda 国内镜像
+[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+
+## Conda tutorial
+[官方入门教程](https://conda.io/docs/user-guide/getting-started.html#)
+
 ## Python导出所有包组件版本与批量安装指定版本包组件
 
 Python使用pip导出当前环境所有包组件版本`pip freeze > requirements.txt ``
@@ -83,27 +89,17 @@ Python使用pip批量安装指定版本组件包`pip install -r requirements.txt
 [pip国内镜像](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
 
 
-## 不要乱用 root 权限
+## Jupyter和 Conda 虚拟环境关联
+[参考官网](https://docs.anaconda.com/anaconda/user-guide/tasks/use-jupyter-notebook-extensions)
 
-## 提权(遇到权限不够,)
-```
-chmod +x miniconda2/ -R
-```
 
-## uwsgi 提示找不到应用
-
-注意 wsgi 文件路径要写全路径
-
-```uwsgi --http :8001 --chdir /home/opmm/mq/riskcontrol_model --home=/root/miniconda2/envs/mq --wsgi-file /home/opmm/mq/riskcontrol_model/riskcontrol_model/wsgi.py
-```
-
-## socket 通信的时候不生效
-要把当前用户的组权限提生来
-```
-chmod 755 opmm
-```
-
+## Anaconda 卸载
+[官网卸载教程](https://docs.anaconda.com/anaconda/install/uninstall)
 
 # 总结
 Conda 是和 virtualenv类似的一个环境管理工具.可以通过他们来创建不同的 python 环境
-在创建环境后可以通过 pip 来下载管理同步包
+`conda install` 和 `pip install`作用不一样,具体可以参考官方教程里的[包管理](https://conda.io/docs/user-guide/getting-started.html#managing-packages)的详细说明.
+简单来说,conda install 安装的是来自Anaconda 服务的包,具体可以安装的包在官网有显示,[具体如下](https://docs.anaconda.com/anaconda/packages/py2.7_osx-64),不同版本不一样.由 Anaconda 维护
+而 pip 可以作为 conda 的一个补充,当 conda 没有的时候可以通过 pip 安装.
+pip 是 python的包管理工具, conda其实也可以管理其他语言. pip包是由pypi管理的.
+上面两个管理工具都可以替换为国内源,加快下载速度
