@@ -79,7 +79,7 @@ Conda 还会自动为你安装依赖项。例如，scipy 依赖于 numpy，因�
 
 ## Python导出所有包组件版本与批量安装指定版本包组件
 
-Python使用pip导出当前环境所有包组件版本`pip freeze > requirements.txt ``
+Python使用pip导出当前环境所有包组件版本`pip freeze > requirements.txt `
 
 
 Python使用pip批量安装指定版本组件包`pip install -r requirements.txt`

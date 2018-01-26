@@ -3,7 +3,7 @@ title: python 数据分析
 date: 2018-01-12 14:37:37
 tags:
 ---
-
+Python数据分析<!--more-->
 # Numpy
 [官网](http://www.numpy.org/)
 ## 和 list 的区别
@@ -91,5 +91,5 @@ pf = pd.DataFrame(np.random.randn(8,4),index=datas,columns=list('ABCD'))`
 
 ## 缺失值处理
 
-## 
+##
 # Matplotlib
