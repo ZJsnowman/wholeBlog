@@ -68,7 +68,7 @@ Conda 还会自动为你安装依赖项。例如，scipy 依赖于 numpy，因�
 ### Cheat-sheet 下载:
 [Conda cheat sheet](https://conda.io/docs/_downloads/conda-cheatsheet.pdf)
 
-## Conda 安装
+## Anaconda or Miniconda 安装与卸载
 [参考官方文档](https://conda.io/docs/user-guide/install/index.html#installing-conda-on-a-system-that-has-other-python-installations-or-packages)
 
 ## Conda 国内镜像
