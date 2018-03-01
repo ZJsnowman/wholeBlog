@@ -81,14 +81,15 @@ https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851
 [参考这个](http://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p07_specify_regexp_for_shortest_match.html)
 这里非贪婪实际上就是最短匹配模式.贪婪则是尽可能长长的匹配.把这两者和路径长度联系起来理解
 
+
+
+### Python 头部声明,编码声明
+https://www.python.org/dev/peps/pep-0263/
 ```python
 __author__ = 'ZJsnowman'
 # -*- coding:utf-8 -*-
 ```
 在Pycharm 中文件最开头需要加入上述语句,不然中文注释会有问题.
-
-### Python 头部声明,编码声明
-https://www.python.org/dev/peps/pep-0263/
 
 ### Python 编码问题
 - ASCII，Unicode 和 UTF-8 之间的关系
@@ -141,7 +142,7 @@ For pip < 9.0 use
 where blork can be any string that is not likely to be an install candidate.
 
 
-## Python 中的 if __name__ == '__main__' 该如何理解
+# Python 中的 if __name__ == '__main__' 该如何理解
 **如果模块是被直接运行的，则代码块被运行，如果模块是被导入的，则代码块不被运行。**
 具体参考
  http://blog.konghy.cn/2017/04/24/python-entry-program/
@@ -154,3 +155,4 @@ where blork can be any string that is not likely to be an install candidate.
 >>> t
 (1,)
 ```
+ `python 整数加一个小数点 比如:0.` 加一个小数点，这也是一种转换为浮点型的方式，作用等于float(0)

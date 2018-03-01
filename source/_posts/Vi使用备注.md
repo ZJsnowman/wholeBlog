@@ -35,3 +35,12 @@ ps:双引号是注释
 
 ### 学习链接
 [浩哥的vim简明教程](http://coolshell.cn/articles/5426.html)
+
+# Vimtutor
+```
+i   输入欲插入文本   <ESC>             在光标前插入文本
+A   输入欲添加文本   <ESC>             在一行后添加文本
+```
+
+# Vim Cheatsheet
+[Vim 快捷键](http://zjsnowman.com/local/vim.txt)
