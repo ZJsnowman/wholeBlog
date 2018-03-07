@@ -115,9 +115,14 @@ python 有四种参数类型
 
 参数定义的顺序必须是：必选参数、默认参数、可变参数和关键字参数。
 
-\*args是可变参数，args接收的是一个tuple；
+**默认参数必须指向不变对象！**
+
+\*args是可变参数，args接收的是一个tuple
+Python允许你在list或tuple前面加一个*号，把list或tuple的元素变成可变参数传进去：
+
 
 \**kw是关键字参数，kw接收的是一个dict。
+Python允许你在dict前面加两个**号，把dict的元素变成关键字参数传进去：
 
 [参考廖老师的教程](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738449338c8a122a7f2e047899fc162f4a7205ea3000)
 
