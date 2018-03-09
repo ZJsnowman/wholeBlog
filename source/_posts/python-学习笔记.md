@@ -152,6 +152,13 @@ where blork can be any string that is not likely to be an install candidate.
 具体参考
  http://blog.konghy.cn/2017/04/24/python-entry-program/
 
+# python 可变与不可变对象
+可变对象: dict,list
+不可变对象: str,tuple,float,int
+- 对可变对象进行操作,是会改变具体内容的
+- 对不可变对象进行操作,内容是不会改变的,所以需要改变的后的结果需要重新复制,例如`str.replace()`
+
+[具体区别](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143167793538255adf33371774853a0ef943280573f4d000)
 
 # python注意点
 只有1个元素的tuple定义时必须加一个逗号,来消除歧义：
