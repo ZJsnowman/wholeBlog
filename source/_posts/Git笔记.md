@@ -11,7 +11,9 @@ tags: [Android]
 不要放到远端，因为其他人的代理设置和你的不一定一样。
 ## 解决办法
  ```
- git rm --cached --force gradle.properties
+ git rm --cached  gradle.properties
+ 更新 ignore 文件
+ git commit -m "update ignore"
  ```
 这条命令会将 gradle.properties 文件剔除 git 管理。只是不被 git 管理，但是文件还是在本地的。
 将该次提交 push 到远端后也会将远端的该文件删除。解决.
