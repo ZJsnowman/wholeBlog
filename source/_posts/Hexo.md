@@ -96,3 +96,16 @@ skip_render:
 3. 自行超链接应用,具体链接为你的域名/local/你的自定义 html 文件.html
 
 *具体例子,参考 python 使用备注中 map 使用备注一项.*
+
+
+## Next 主题下通过 Latex 插入数学公式
+[在线 Latex](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
+1. 在 next 主题配置文件中有个mathjax的开关,设置为 enable
+2. 由于`_`在引起 markdown 和 latex 语法冲突,所以替换渲染引擎
+```
+npm uninstall hexo-renderer-marked --save
+npm install hexo-renderer-kramed --save
+```
+[参考](http://luodian.ink/2018-03-04/Next%E4%B8%BB%E9%A2%98%E4%B8%8BMathJax%E4%B8%8EMarkdown%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/)
+
+3. 行内公式使用${行内公式}$,行见公式使用$${行见公式}$$
