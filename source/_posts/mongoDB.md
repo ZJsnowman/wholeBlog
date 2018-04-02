@@ -3,7 +3,7 @@ title: mongoDB
 date: 2018-04-02 14:23:20
 tags:
 ---
-
+学习使用 mongoDB<!--more-->
 
 # 安装
 [参考官网](https://docs.mongodb.com/manual/administration/install-community/)
