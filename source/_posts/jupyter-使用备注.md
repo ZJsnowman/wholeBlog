@@ -44,3 +44,13 @@ JupyterNotebookTips.ipynb-meta LinearRegression.ipynb-meta
 ```
 pandas (0.18.1)
 ```
+
+## 安装基于 pyhton3的 Anaconda 中安装 python2 kernel
+[参考官网](http://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+1. 首先创建一个 python2 的环境并 active
+2. 在 python2 环境中执行下面两行代码
+```python
+python2 -m pip install ipykernel
+python2 -m ipykernel install --user
+```
+这样在 python2环境下执行`jupyter-notebook`就可以看到 python2 kernel

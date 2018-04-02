@@ -147,7 +147,7 @@ For pip < 9.0 use
 where blork can be any string that is not likely to be an install candidate.
 
 
-# Python 中的 if __name__ == '__main__' 该如何理解
+# Python 中的 if \__name\__ == '\__main\__' 该如何理解
 **如果模块是被直接运行的，则代码块被运行，如果模块是被导入的，则代码块不被运行。**
 具体参考
  http://blog.konghy.cn/2017/04/24/python-entry-program/
