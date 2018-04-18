@@ -24,14 +24,18 @@ MQ是消费-生产者模型的一个典型的代表，一端往消息队列中�
 链接：https://www.zhihu.com/question/34243607/answer/58314162
 来源：知乎
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-# ActiveMQ 用 Java 如何实现收发
+# ActiveMQ
+## ActiveMQ 用 Java 如何实现收发
 [参考这篇入门](https://www.songliguo.com/activemq-getting-started.html)
 
-# ActiveMQ 用 Python 如何实现收发
+## ActiveMQ 用 Python 如何实现收发
 [官方推荐的客户端](https://github.com/jasonrbriggs/stomp.py)
 
 ps: 注意通读官方 github ,包括 issue(补充说明 doc 考虑不到的问题),doc,CI(查看 python 版本适配情况)
 
-## 参考文档
+# RabbitMQ
+## Python 通过Pika 作为 client 来连接 RabbitMQ
+https://pika.readthedocs.io/en/0.10.0/
+##
+# 参考文档
 http://cizixs.com/2015/05/13/python-and-message-queue-one

@@ -7,6 +7,7 @@ tags: [数据分析]
 # 安装
 安装 R 语言包和 R-studio
 # R 基础
+[参考学习 Udacity 同学的](http://road2autodrive.info/2017/11/21/Uda-DataAnalysis-22/)
 ## R 数据子集
 1. 通过 subset(x,condition)
 
@@ -35,3 +36,4 @@ raddit$age.range<-factor(raddit$age.range,levels=c( "Under 18", "18-24", "25-34"
 
 ## 学习资料
 https://mubu.com/edit/1E9flQqdW1
+https://www.statmethods.net/index.html

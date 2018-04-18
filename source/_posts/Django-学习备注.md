@@ -6,6 +6,7 @@ tags:
 
 Django 学习备注<!--more-->
 
+
 # 创建应用
 - 创建项目
 - 创建应用
@@ -14,7 +15,6 @@ Django 学习备注<!--more-->
 - 激活模型
 - 通过 Django shell 测试 Django API
 
-[参考链接](http://python.usyiyi.cn/translate/django_182/intro/tutorial01.html)
 
 # Django admin 管理(对内视图)
 - 创建管理员账户
@@ -47,6 +47,17 @@ Django 学习备注<!--more-->
 # 静态文件处理
 - 如何处理 css 文件
 - 添加图片
+
+## 配置静态目录
+```python
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
+]
+```
+这里需要再 setting 文件中配置一下静态目录.不然 django会找不到具体的 css
+ `template` 同样需要这样的设置.需要在 setting文件中指定具体`template`地址
+ 都是通过一个 `[]`来列出具体的路径
 
 
 # 编写可重用的应用
@@ -184,3 +195,8 @@ chmod 755 opmm
 本质上都是为了避免硬编码.不然如果后期 url 变了,这需要改很多地方
 
 [参考](http://www.cnblogs.com/ajianbeyourself/p/4937951.html)
+
+
+# Django 总结
+[最新2.0 官方中文文档](https://docs.djangoproject.com/zh-hans/2.0/)
+[Django 2.0 全中文文档,建议看这个](http://djangobook.py3k.cn/2.0/)
