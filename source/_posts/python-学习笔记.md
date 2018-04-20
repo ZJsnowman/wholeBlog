@@ -168,3 +168,8 @@ where blork can be any string that is not likely to be an install candidate.
 (1,)
 ```
  `python 整数加一个小数点 比如:0.` 加一个小数点，这也是一种转换为浮点型的方式，作用等于float(0)
+
+
+ # 闭包
+ [这个讲的比较好,帮助理解](http://yunjianfei.iteye.com/blog/2186092)
+ 具体使用暂时还比较少
