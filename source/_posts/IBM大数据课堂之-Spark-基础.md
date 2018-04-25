@@ -32,21 +32,21 @@ Spark 是一个快速且通用的集群计算平台
 - 批处理,迭代式计算,交互查询和流处理
 
 # 生态介绍
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fn98pavbbbj31kw0ukgqm.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanioyj9j31kw0ukaf5.jpg)
 ## Spark core
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn98qdmj5lj31kw0nw7bh.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanjmssdj31kw0nw42f.jpg)
 ## Spark SQL
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fn98r67ktyj31kw0d70wb.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjankkfg8j31kw0d7q4v.jpg)
 ## Spark Streaming
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fn98s71uyjj31kw0h443x.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanli463j31kw0h4gom.jpg)
 ## Mlib
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fn98uu18k6j31kw0l0dln.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjanm03l4j31kw0l0gpr.jpg)
 ## Graphx
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fn98vsb2vpj31kw0i8gs4.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjanock07j31kw0i80w5.jpg)
 ## Cluster Manager
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn98wn150ij31kw0blwin.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanorp67j31kw0blwgm.jpg)
 ## 紧密集成的优点
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fn98xpe4ocj31kw0h47b1.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanpa5uoj31kw0h4tc8.jpg)
 
 # 与 Hadoop 比较
 ## Hadoop 应用场景
@@ -56,28 +56,28 @@ Spark 是一个快速且通用的集群计算平台
 - 时效性要求高的场景
 - 机器学习等领域
 ## 小结
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn993ygfzgj31kw0l9gr6.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjanqn1rej31kw0l90vr.jpg)
 
 # Spark 安装
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fn9a2eeewij31kw0ltwk9.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanr4csrj31kw0lttbo.jpg)
 
 # RDDs介绍
 ## SparkContext
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fn9fnl93qbj31kw0nr0xt.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjans39qfj31kw0nr0vj.jpg)
 ## RDDs
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn9ftcjdoej31kw0gp79g.jpg)
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fn9fu4oybnj31kw0gmn28.jpg)
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fn9fviyk97j31kw0iy42w.jpg)
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn9fwm1zd0j31kw0lrq9z.jpg)
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fn9fy6t0obj31kw0kywhk.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjansjik9j31kw0gpdih.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanszqd3j31kw0gmwh2.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjantyslgj31kw0iy76h.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanvu4flj31kw0lr77v.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanw9dn3j31kw0ky0un.jpg)
 
 # Transformations介绍
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fn9fzthnmzj31kw0j4dj8.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjanxgqozj31kw0j4mz1.jpg)
 
 # RDDs 特性
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fn9g8m8hkrj31kw0x2doa.jpg)
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fn9ga4lonlj31kw0spk32.jpg)
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fn9gbv0omfj31kw0rm7bq.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjany1xzjj31kw0x2jwj.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjanzbt7lj31kw0spgrg.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjanzy1txj31kw0rmady.jpg)
 
 
  # 学习资料

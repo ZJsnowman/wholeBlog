@@ -23,14 +23,14 @@ tags: [Android]
 
 `git remote prune origin`这里说一下我的理解:git本地会保留本地分支与远端分支的track关系.但是默认情况下,当远端分支被其他人删除掉,那么这种track关系就会更改.需要手动去清楚一下这种对应的关系.举个例子:
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fidk11x29rj30tq0s27dq.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjanb9a28j30tq0s2dp2.jpg)
 
 这里我这执行
 `git remote show origin`查看一下本地和远端对应关系.就可以清晰的发现很多远端
 分支已经被清理掉了,他曾经在我本地留下的缓存信息还在.所以可以手动执行一下
 `git remote prune origin`来清理这种绑定关系.
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidk14kazxj30og0uqdlx.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjanc6kusj30og0uqdls.jpg)
 
 清除之后,绑定关系清晰很多.这样你就知道自己git push 和git fetch 的时候到底在干什么
 
@@ -76,4 +76,4 @@ $ git branch -vv
 [git lfs](https://git-lfs.github.com/)
 具体案列可以[参考](https://github.com/ZJsnowman/data_analysis),
 这里我将所有的 pdf 用 git lfs管理起来.具体可以进到 pdf 详情界面
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fm5q3g0iqwj31kw0ghdja.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjandknvhj31kw0gh46g.jpg)

@@ -19,7 +19,7 @@ git 管理多个 ssh key<!--more-->
 这里不要一路回传，让你选择在哪里选择存放key的时候写个名字，比如 *id_rsa_github*，之后的两个可以回车。
 完成之后我们可以看到~/.ssh目录下多了两个文件
 
-![~/.ssh目录下的文件](http://i.imgur.com/jVVUi5k.jpg)
+![~/.ssh目录下的文件](https://ws1.sinaimg.cn/large/006tNc79gy1fqjaopw4yuj30ps0att9r.jpg)
 
 -  生成第二个ssh key（这里我用于gitlab，用的是公司邮箱）
 
@@ -58,7 +58,7 @@ git 管理多个 ssh key<!--more-->
 
 - 测试
 
-![分别测试githab和gitlub](http://i.imgur.com/t2kPXIb.jpg)
+![分别测试githab和gitlub](https://ws4.sinaimg.cn/large/006tNc79gy1fqjaoqu19bj30it0awt9x.jpg)
 
 PS:如果到这里你没有成功的话，别急，教你解决问题的终极办法--debug
 

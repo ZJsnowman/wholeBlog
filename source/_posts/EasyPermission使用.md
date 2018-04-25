@@ -8,24 +8,24 @@ tags: [Android]
 
 
 ## 初次申请权限
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fidjzw051fj31401z445e.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjan1djorj31401z4adt.jpg)
 弹出权限申请框 (没有不在询问checkbox)
 
 ## 拒绝后再次申请
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidjzyrz6mj31401z4dmk.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjan2bjg5j31401z4q6l.jpg)
 弹出自定义dialog (解释为什么需要权限)
 
 ## 上面点击确定后
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidk01tne3j31401z4aha.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjan39srpj31401z4djt.jpg)
 再次弹出系统权限申请dialog(有不在询问checkbox)
 
 
 ## 勾选上不在询问
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk0847imj31401z47bi.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjan476j0j31401z4789.jpg)
 这里如果勾选上不再询问,只能点击拒绝.也就是存在永远拒绝(这里也不是绝对拒绝,后面可以通过在setting-应用里手动打开)
 
 ## 不再询问拒绝
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fidk0cuj1lj31401z4qbc.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjan4njmkj31401z40xf.jpg)
 弹出自定义dialog(解释为什么不要暂时永久关闭权限,
 以及如果想打开如何打开,这里只能去setting里后动打开权限)
 
@@ -33,16 +33,16 @@ tags: [Android]
 申请dialog.
 
 ## 点击settings
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk0i3ff7j31401z4n6c.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjan54kauj31401z4dl2.jpg)
 这里需要友好的引导用户去手动打开权限.
 
 ## 手动完成权限后点击back
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fidk0pb0n5j31401z4tem.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjan6j923j31401z441n.jpg)
 会再次回到应用界面.这里有一个回调,开发者可以自行决定干什么.
 建议:再次引导用户重新开始操作.
 
 ## 再次点击打开相机
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fidk0w641yj31401z479q.jpg)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjan7g2n0j31401z4tbj.jpg)
 可以直接操作,不会在弹出申请权限dialog
 
 todo  add  easyPermission 的基本使用和封装

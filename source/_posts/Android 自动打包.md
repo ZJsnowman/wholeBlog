@@ -18,7 +18,7 @@ tags: [Android]
 2. 访问浏览器 localhost:8080/jenkins 进入 jenkins 的web 管理界面。根据需要安装对应的插件。这里我需要的是 gitlab gradle，gitlab hook。安装完插件后可以开始创建项目了。
 3. 这里 git 需要配置一下访问资格，账号密码，ssh都可以。
 4. 构建采用 gradle。通过 gradle wrapper 的方式。注意勾选一下	Make gradlew executable
-  ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fidjzkdrl2j317o0ui41k.jpg)
+  ![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjamojeu9j317o0ui0vs.jpg)
 
 
 ### 配置编译环境
@@ -42,7 +42,7 @@ http://your-jenkins-server/gitlab/build_now
 
 ### 代理设置
 这是我国的一个特色。考虑到一些包下载不下来，所以需要自行配置代理，最好是 http 代理。我这边是 mac。截图如下。
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidjzli5myj30i30f0dh6.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjampxxkvj30i30f03zu.jpg)
 另外这里需要注意一下。忽略主机之间用逗号(,)而不是中文的顿号（、）。
 
 ### 一些问题
@@ -50,7 +50,7 @@ http://your-jenkins-server/gitlab/build_now
 
 ### submodule
 考虑到一些项目会有 submodule，这个时候需要做一些额外的配置。
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fidjzmjfsij31660kawgm.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjamqdy12j31660ka0uv.jpg)
 在源码管理模块添加一个 submodule 设置。勾选上递归更新 submodule 和 用父目录的证书（这是 jenkins 的一个 bug）。第二个勾选框是为了解决 submodule 认证失败的 bug。
 
 

@@ -7,7 +7,7 @@ Python数据分析<!--more-->
 # Numpy
 [官网](http://www.numpy.org/)
 ## 和 list 的区别
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fndtod6o9vj31kw0utjz3.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjao7grw8j31kw0ut469.jpg)
 Numpy 数组和 Python 的列表区别
 * Numpy 数组的各元素必须是一样的类型
 * Numpy数组可以方便的计算的平均值，方差之类的
@@ -21,7 +21,7 @@ b = np.array([1,2,3])
 print b
 print b*3
 ```
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fndx5zrdugj31eq0820sr.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjao81zxkj31eq0820v3.jpg)
 
 **python list 中`+`是追加的意思,而 numpy中就是运算的加法**
 

@@ -8,7 +8,7 @@ Material Design 学习笔记<!--more-->
 Toolbar用来替换 Actionbar
 ActionBar 是在主题里指定的
 1. 去掉 ActionBar,指定一个没有 ActionBar 的主题.比如: Theme.AppCompat.Light.NoActionBar
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fjj356klunj30dw0oqaac.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjao323rbj30dw0oq0td.jpg)
 2. layout 中使用 toolbar即可.
 ```
 <FrameLayout

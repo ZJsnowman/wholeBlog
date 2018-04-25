@@ -60,6 +60,10 @@ STATICFILES_DIRS = [
  都是通过一个 `[]`来列出具体的路径
 
 
+# Django 数据库增删改查
+[参考这个,从 Django book 中截取出来](https://www.jianshu.com/p/1ee196312e3d)
+[这个也很简介的说明了增删改查](http://www.runoob.com/django/django-model.html)
+
 # 编写可重用的应用
 就是可以方便打包上传,人家也可以很方便的通过 pip 安装使用
 就要求代码里面不要有硬编码.
@@ -199,4 +203,4 @@ chmod 755 opmm
 
 # Django 总结
 [最新2.0 官方中文文档](https://docs.djangoproject.com/zh-hans/2.0/)
-[Django 2.0 全中文文档,建议看这个](http://djangobook.py3k.cn/2.0/)
+[Django Book,全中文](http://djangobook.py3k.cn/2.0/)

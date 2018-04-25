@@ -5,7 +5,7 @@ tags:
 ---
 了解学习 ELK 的一些备注,ELK 架构在实时日志处理和数据分析上能够起到很大的作用<!--more-->
 # 架构介绍
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fnahr7109yj30nm0ckmxm.jpg)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjan9scadj30nm0ckwfi.jpg)
 ## logstash
 logstash的角色分别为两种，一种是shipper，负责日志的采集和格式化并将日志传送到redis中，部署在日志采集端。 另外一种是indexer，负责从redis队列中将日志提取存入ElasticSearch中。
 
