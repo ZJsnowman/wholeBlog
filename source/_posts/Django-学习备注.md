@@ -64,6 +64,16 @@ STATICFILES_DIRS = [
 [参考这个,从 Django book 中截取出来](https://www.jianshu.com/p/1ee196312e3d)
 [这个也很简介的说明了增删改查](http://www.runoob.com/django/django-model.html)
 
+# Xadmin
+[官网](http://sshwsfc.github.io/xadmin/)
+
+
+
+# 一些小细节
+`verbose_name` 这个决定后台管理系统的显示信息
+`verbose_name_plural`这个是`verbose_name`的复数形式.如果不设置会默认在`verbose_name`
+的基础上添加一个 `s`.
+
 # 编写可重用的应用
 就是可以方便打包上传,人家也可以很方便的通过 pip 安装使用
 就要求代码里面不要有硬编码.
