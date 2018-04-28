@@ -52,3 +52,9 @@ Docker 学习备注<!--more-->
 `docker container prune`
 # other
 `cat /etc/os-release`，这是 Linux 常用的查看当前系统版本的命令
+
+
+
+# 学习资料
+[Docker — 从入门到实践,gitbooks](https://yeasy.gitbooks.io/docker_practice/content/)
+[阮一峰, Docker 入门](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
