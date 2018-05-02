@@ -50,10 +50,10 @@ Django 学习备注<!--more-->
 # 配置静态目录
 
 ```python
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
+ ]
 ```
 
 这里需要再 setting 文件中配置一下静态目录.不然 django会找不到具体的 css
@@ -123,10 +123,6 @@ pymysql.install_as_MySQLdb()
 环境,但是通过`pip`来安装依赖.通过`conda`来创建大的依赖,比如指定`python 版本`和`django`
 版本,其他小的依赖则通过`conda`里面的自带的 `pip`来安装的.
 
-## Docker 部署
-
-[参考资料](https://cloud.tencent.com/developer/column/1012)
-
 ## 注意点
 
 -   建立软连接的时候要写**全路径**
@@ -149,20 +145,20 @@ pymysql.install_as_MySQLdb()
 
 -   `nginx`的日志目录是`/var/log/nginx/error.log`
 
+[自己部署成功的nginx 配置文件](https://zjsnowman.com/local/djangoAdvance_nginx.conf)
+[uwsgi_params,这个按照官方复制的,暂时没用到](https://zjsnowman.com/local/uwsgin_params)
+[uwsgi 配置文件](https://zjsnowman.com/local/django_advance_uwsgi.ini)
+
 [参考官方部署文档](https://uwsgi.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
 
-## uwsgi 提示找不到应用
+## Docker 部署
 
-注意 wsgi 文件路径要写全路径
-
-```shell
-uwsgi --http :8001 --chdir /home/opmm/mq/riskcontrol_model --home=/root/miniconda2/envs/mq --wsgi-file /home/opmm/mq/riskcontrol_model/riskcontrol_model/wsgi.py
-```
+[参考资料](https://cloud.tencent.com/developer/column/1012)
 
 # Celery 使用
 
 [杨士航的博客](http://yshblog.com/subject/7)
-[](https://www.imooc.com/article/16164)
+[bobby老师慕课通过 celery异步发邮件](https://www.imooc.com/article/16164)
 
 # Django 总结
 
