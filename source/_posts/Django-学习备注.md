@@ -158,6 +158,7 @@ pymysql.install_as_MySQLdb()
 # Celery 使用
 
 [杨士航的博客](http://yshblog.com/subject/7)
+
 [bobby老师慕课通过 celery异步发邮件](https://www.imooc.com/article/16164)
 
 # Django 总结
