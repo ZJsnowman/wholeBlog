@@ -26,3 +26,14 @@ kibana 安装,官网安装,和 elasticsearch 安装一样的版本
 ## CRUD
 
 ## 批量操作
+ - mget
+ - bulk
+
+## 查询
+- 基本查询
+ - match 查询
+ - term 查询
+ - terms 查询
+ - range 范围查询
+- 组合查询
+- 过滤
