@@ -24,3 +24,6 @@ try:
 except Exception as e:
     print(e)
 ```
+# 指定数据类型
+http://www.cnblogs.com/arkenstone/p/6271923.html
+http://docs.sqlalchemy.org/en/latest/core/type_basics.html#generic-types
