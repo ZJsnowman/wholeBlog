@@ -112,7 +112,7 @@ Out[9]:
 2013-01-06 -0.673690  0.113648 -1.478427  0.524988
 ```
 
-DataFrame 是有数据, index和 columns 三部分组成
+DataFrame 是有数据, index(label)和 columns 三部分组成
 
 ```python
 In [16]: df.index
@@ -162,8 +162,29 @@ Out[44]:
 
 ## 常用函数
 
-`Series.value_counts()`统计该 series 下的 item 出现频次.
-
+- `Series.value_counts()` 统计该 series 下的 item 出现频次.
+- `Series.unique()`  返回该 series去重后的值,可以和`value_counts`配合使用
+- `Series.idxmax(axis=0, skipna=True, *args, **kwargs)` 返回该列最大值的index
+- `Series.agg(func, axis=0, *args, **kwargs)` 对一个 series 的每行或者每列执行多个函数操作
+- `DataFrame.set_index(keys, drop=True, append=False, - inplace=False,verify_integrity=False)` 用 DF 的某个列来作为 index
+- `DataFrame.rename(mapper=None, index=None, columns=None, axis=None, copy=True, inplace=False, level=None)` DF 重命名index,columns
+- `Series.dropna(axis=0, inplace=False, **kwargs)` 丢掉缺失的行.**空串不是 NA,None是 NA**
+```python
+>>> ser = pd.Series([np.NaN, 2, pd.NaT, '', None, 'I stay'])
+>>> ser
+0       NaN
+1         2
+2       NaT
+3
+4      None
+5    I stay
+dtype: object
+>>> ser.dropna()
+1         2
+3
+5    I stay
+dtype: object
+```
 ## 数据转换
 
 ### 计算指标/哑变量(Dummy Variables)
