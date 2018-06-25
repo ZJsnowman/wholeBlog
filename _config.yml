@@ -84,3 +84,8 @@ algolia:
   apiKey: '8b0fd63b8531c6673fc8ec50b80429ef'
   indexName: 'prod_blog'
   chunkSize: 5000
+
+# Security
+##
+encrypt:
+    enable: true
