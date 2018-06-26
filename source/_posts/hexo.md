@@ -109,3 +109,7 @@ npm install hexo-renderer-kramed --save
 [参考](http://luodian.ink/2018-03-04/Next%E4%B8%BB%E9%A2%98%E4%B8%8BMathJax%E4%B8%8EMarkdown%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/)
 
 3. 行内公式使用${行内公式}$,行见公式使用$${行见公式}$$
+
+## Hexo 添加文章解密功能
+[安装插件即可](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
+[hexo 插件网站,可以用来完成自定义需求](https://hexo.io/plugins/index.html)
