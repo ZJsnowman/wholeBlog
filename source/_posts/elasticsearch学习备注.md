@@ -37,3 +37,6 @@ kibana 安装,官网安装,和 elasticsearch 安装一样的版本
  - range 范围查询
 - 组合查询
 - 过滤
+
+
+[elasticsearch 导入导出工具](https://github.com/taskrabbit/elasticsearch-dump)

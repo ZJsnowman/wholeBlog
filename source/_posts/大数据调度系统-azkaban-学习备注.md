@@ -38,3 +38,50 @@ notify.emails=xxx@xxx.com,xx@xxx.com  # 成功失败后发送邮件
 ```
 这里通过引用的方式传入时间参数,这样在 azkaban的 web 界面上就可以直接编辑参数
 ![](https://ws3.sinaimg.cn/large/006tNc79gy1fsnia05ny1j31kw0ki0tp.jpg)
+
+
+这里涉及到 azkaban 一个比较复杂的传参,通过 job 自身支持的参数替换来作为 shell脚本的入参,然后在 shell 脚板中通过$1,$2的方式来引用
+```
+type=command
+host=http://host:port
+index=logstash-2018*
+doc_type=mbpgtw-interface
+date=2018-06-26
+limit=10000
+command=bash /opt/appl/sparkLogAnalysis/load_data_from_es.sh ${host} ${index} ${doc_type} ${date} ${limit}
+notify.emails=zhangjun@iboxpay.com,wuze@iboxpay.com
+```
+
+```sh
+#!/usr/bin/env bash
+
+elasticdump \
+  --input=$1/$2/$3 \
+  --output=/opt/appl/es_data/mbpgtw-interface-$4.json \
+  --limit $5 \
+  --sourceOnly true \
+  --searchBody '{"query": {
+        "range": {
+            "@timestamp": {
+                "gte": "'$4' 00:00:00",   #在字符串中要把$4用单引号在包一层来达到替换的目的
+                "lte": "'$4' 23:59:59",
+                "format":"yyyy-MM-dd HH:mm:ss",
+                "time_zone":"+08:00"
+            }
+        }
+    }
+}'
+```
+
+### 公共参数
+可以定义一个`system.properties`文件,里面定义key-value.
+![](https://ws2.sinaimg.cn/large/006tKfTcgy1fspw7cf4vej31g60ic3zp.jpg)
+
+这样多个 job 之间可以共享`system.properties`里面定义的字段.一样也是通过${xxx}的方式在 job 文件中引用.
+
+
+
+
+
+## 一些注意事项
+- 一个flow的email属性，只会取最后一个job的配置，其他的job的email配置将会被忽略
