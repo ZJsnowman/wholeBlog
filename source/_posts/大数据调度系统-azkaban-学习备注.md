@@ -40,7 +40,7 @@ notify.emails=xxx@xxx.com,xx@xxx.com  # 成功失败后发送邮件
 ![](https://ws3.sinaimg.cn/large/006tNc79gy1fsnia05ny1j31kw0ki0tp.jpg)
 
 
-这里涉及到 azkaban 一个比较复杂的传参,通过 job 自身支持的参数替换来作为 shell脚本的入参,然后在 shell 脚板中通过$1,$2的方式来引用
+这里涉及到 azkaban 一个比较复杂的传参,通过 job 自身支持的参数替换来作为 shell脚本的入参,然后在 shell 脚板中通过\$1,\$2的方式来引用
 ```
 type=command
 host=http://host:port
@@ -72,6 +72,29 @@ elasticdump \
     }
 }'
 ```
+这里如果需要动态的更改时间的话,是这样做的.时间(date)参数就不要在 job 里面定义.在 shell 脚本里面去弄.具体代码如下:
+```sh
+#!/usr/bin/env bash
+yesterday=`date -d "1 days ago" +%Y-%m-%d`  
+#这里注意不是单引号,而是键盘波浪号下面的符号,应该不是中文符号, MarkDown 里面行间代码也是这个符号
+elasticdump \
+  --input=$1/$2/$3 \
+  --output=/opt/appl/es_data/$3-$yesterday.json \
+  --limit $4 \
+  --sourceOnly true \
+  --searchBody '{"query": {
+        "range": {
+            "@timestamp": {
+                "gte": "'$yesterday' 00:00:00",
+                "lte": "'$yesterday' 23:59:59",
+                "format":"yyyy-MM-dd HH:mm:ss",
+                "time_zone":"+08:00"
+            }
+        }
+    }
+}'
+```
+[shell 传参可以参考这个](https://www.codetd.com/article/1728733)
 
 ### 公共参数
 可以定义一个`system.properties`文件,里面定义key-value.
