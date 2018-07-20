@@ -21,6 +21,8 @@ Numpy.ndarray.
 ```python
 data.shape  # 显示 array 的大小
 data.dtype  # 显示 array 的数据类型, array 所有的数据类型都必须是一样的
+data.ndim  # 显示数据维度,一维还是二维还是多维
+data.size  #显示数据量的多少
 ```
 
 `np.arange()`是Python 内置`range()`的数组版
@@ -56,17 +58,12 @@ Out:
 ```python
 In:
   arr = np.arange(10)
-  arr
-  arr[5]
-  arr[5:8]
   arr[5:8] = 12
   arr
 Out:
   array([ 0,  1,  2,  3,  4, 12, 12, 12,  8,  9])
 In:
-  arr_slice = arr[5:8]  #2
-  arr_slice[1] = 12345
-  arr
+  arr_slice = arr[5:8]  #2 
   arr_slice[:] = 64
   arr
 Out:
@@ -74,14 +71,56 @@ Out:
 ```
 在 Numpy 中这不是一个复制操作,相当于一个指针,你对 arr_slice的所有操作都会传播到原始数据.如果要执行
 复制才做需要调用`.copy()`函数.这么设计的目的是因为 Numpy 设计师为了处理大数据.如果复制来复制去会影响
-性能和内存.同理在 DataFrame中如果需要对切片数据赋值的话也是会影响到原始数据的,如果不希望这样的话也需要执行`.copy()`操作
+性能和内存.同理在 DataFrame中如果需要对切片数据赋值的话也是会影响到原始数据的,如果不希望这样的话也需要执行`.copy()`操作.在`#2`这个地方 `arr_slice = arr[5:8].copy()`
 
 ## numpy 的复制与视图
 复制 - 花式索引,布尔索引
 
 视图 - 切片,元素索引,转置
 
+## 常用函数
+- `arange`
+- `linspace`  和 arange 的区别是参数包括 stop,且第三个参数不是步长,而是生成数组元素的数量
+- `random`
+这里如果不指定 seed 的话,每次生成的随机矩阵都不一样.如果需要每次生成的随机矩阵一样的话,需要手动指定随机种子.
+```python
+np.random.seed(24)
+np.random.randint(1,10,size=(2,5))
+```
+这样的话每次生成的随机矩阵就是一样的,方便调试算法.如果希望每次生成的矩阵都不一样,就不显示指定随机种子即可
+该模块常用的三个方法分别是`random,randint,normal` .分别生成浮点数,整数,以及正态分布的随机数
+还有个有意思的函数`np.random.shuffle(x)`可以对 x 的元素进行打乱. shuffle(洗牌)
 
+## Numpy矩阵访问方法
+Numpy 专门为矩阵发明了一种检索语法 `data[row,column]`,这种语法是专门针对矩阵进行优化,当然在具体索引某个具体的值的时候使用 `data[row][column]`也是可以的.但是前者效率更高.而且前者支持切片语法,能够很方便的截取部分矩阵.比如 `data[:2,:3]`表示截取前两行和前三列.而用 `data[2][3]`则不会得到我们想要的数据,这个具体执行一遍就清楚了.
+
+**这里结论就是同意用Numpy 提供的 `data[row,column]`语法来访问数据**
+
+## 合并与分割
+- `np.concatenate()` 通用合并方法,需要制定 axis
+- `np.vstack()`  垂直合并,而且容错性更好
+- `np.hstack()` 水平合并
+
+- `np.split()` 分割通用方法
+- `np.vsplit()`  垂直分割
+- `np.hsplit()` 水平分割
+
+## 聚合
+np 的聚合函数比python 原生的效率要高.
+- `np.sum()`
+- `np.min()  np.max(),np.median(),np.mean(),np.percentile()`
+
+## 索引
+- `np.argmax()`
+其他类似,找到对应的索引
+
+## Fancy Indexing
+##
+- `np.count_nonzero(x)` 计算 x 中非零元素的个数,方便统计布尔数组中 True 的个数,当然也可以使用 `sum()`
+- `np.any(x==0) VS np.all(x==0)` 前者只要 x 有任何一个满足条件就会返回 True,后者需要 x 全部满足条件才可以  
+
+
+**机器学习算法中,接受的 一般都是一个 numpy 数组,而 pandas 更多是在 numpy 上封装了很多灵活的方法,可以很方便我们用来对数据预处理,处理完的数据最好还是需要转成 numpy 数组的.所以理解 numpy 非常有必要**
 
 
 # pandas

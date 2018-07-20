@@ -27,6 +27,13 @@ tags: [数据分析]
 
 [暂时参考这个,日后补充](https://classroom.udacity.com/nanodegrees/nd002-cn-basic/parts/084fcc90-54f8-4d13-9e97-ce8e80e74ae1/modules/e95ca0b1-2716-4f45-bf4b-781653e885e5/lessons/b15ba0a2-015d-4c5a-87ae-9efba2cabb43/concepts/256cdd36-17d4-442a-a033-7c64ce83f7f8)
 
+## 魔法命令
+- %run  跑外部 python 代码
+- %timeit 跑一行代码的执行时间,会跑多次取平均值
+- %%timeit 跑一段代码的执行时间
+- %time 只跑一次,一行代码
+- %%time 只跑一次,一段代码
+
 # 导出
 
 jupyter 可以方便的导出各种格式包括幻灯片

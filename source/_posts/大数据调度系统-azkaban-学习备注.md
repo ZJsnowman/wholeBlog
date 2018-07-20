@@ -108,3 +108,4 @@ elasticdump \
 
 ## 一些注意事项
 - 一个flow的email属性，只会取最后一个job的配置，其他的job的email配置将会被忽略
+`java.lang.UnsupportedClassVersionError: azkaban/soloserver/AzkabanSingleServer : Unsupported major.minor version 52.0` 出现这种错误,是 Java 版本太低导致的,更新到java8 即可
