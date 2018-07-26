@@ -134,6 +134,7 @@ $ 代表行末等等。
 
 # 所使用的Vi 配置
 [用的 square 的 vi ,自带 tmux](https://github.com/square/maximum-awesome)
+[iTerm2 整合 Tmux 利器](https://toutiao.io/posts/q86tnu/preview)
 
 # Vim Cheatsheet
 [Vim 快捷键](http://zjsnowman.com/local/vim.txt)
