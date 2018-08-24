@@ -54,7 +54,7 @@ Conda 还会自动为你安装依赖项。例如，scipy 依赖于 numpy，因�
 ## 保存和加载环境
 共享环境这项功能确实很有用，它能让其他人安装你的代码中使用的所有包，并确保这些包的版本正确。你可以使用 conda env export > environment.yaml 将包保存为 YAML。命令的第一部分 conda env export 用于输出环境中的所有包的名称（包括 Python 版本）。
 
-![将导出的环境输出到终端中](https://ws3.sinaimg.cn/large/006tNc79gy1fqjamnafxfj30lb0f8t9p.jpg)
+![将导出的环境输出到终端中](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043127.jpg)
 上图中，你可以看到环境的名称和所有依赖项及其版本。导出命令的第二部分 > environment.yaml 将导出的文本写入到 YAML 文件 environment.yaml 中。现在可以共享此文件，而且其他人能够用于创建和你项目相同的环境。
 
 要通过环境文件创建环境，请使用 conda env create -f environment.yaml。这会创建一个新环境，而且它具有同样的在 environment.yaml 中列出的库。

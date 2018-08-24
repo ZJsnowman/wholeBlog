@@ -21,7 +21,7 @@ MySQL update 快
 kibana 安装,官网安装,和 elasticsearch 安装一样的版本
 
 # es 概念
-![](https://ws1.sinaimg.cn/large/006tNc79gy1frmjpmm3pkj31940pi75t.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043244.jpg)
 
 ## CRUD
 

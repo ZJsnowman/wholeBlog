@@ -8,7 +8,7 @@ tags: [Android]
 # 到底优化什么
 优化Android 推送到底是优化什么?答:提高 **通用到达率**
 下图是完整推送过程
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjamtyv4fj30j60ct0w2.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043143.jpg)
 
 
 - 在线送达率: 表示的是，针对长连在线的设备进行消息下发，成功送达到设备的比例(注意，定义提及的只是送达到设备，而非送达到App这个层面)。 在线送达率 = 送达设备数/下发数 。绝大部分推送服务提供商所宣传的高送达率其实说的就是“在线送达率”。“在线送达率”是一个技术层面的指标，开发者不需要关注这个指标。
@@ -28,27 +28,27 @@ tags: [Android]
 # 优化思路
 ## 1. 统计通用到达率
 第一步先统计通用到达率是为了方便日后优化对比.一般来讲，“通用送达率”和App自身的活跃度呈正相关的。在App集成了推送SDK刚上线的时候，在推送后台看到的通用送达率会很高，之后会发现通用送达率就会随着时间的增长而逐步降低，直至最后稳定在一个数值上。这就说明了通用送达率和App的活跃度有很大的关系。不活跃的App，有可能是因为卸载导致，有可能是因为App没有启动过，导致和服务器的长连接建立不起来，从而导致服务器端无法下发消息(注: 消息下发的前提是设备联网且和服务器的长连通道建立)。下面是一个线上真实App的某次发送任务，细分到App的活跃区间，来看看App的活跃度对消息送达率的影响:
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjamv40q0j30ga07kta2.jpg).
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043144.jpg).
 这里有个问题需要考虑,通用到达率不仅仅这次推送能否到达设备有关,用户的活跃度也至关重要(这个是这次优化做不到的).单纯的对比这个参数,对推送是否真正在技术上实现了优化是不准确的.所以还需要仔细考虑一下如何设计实验.
 ## 2. 现有推送系统尽可能提高送达率.
 这些需要用户手动操作第三方 ROM 的管理软件
 - EMUI OS（华为）
 
 **自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程不会开启，只能手动开启应用**
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjamvru5mj30rs0ghdia.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043145.jpg)
 **后台应用保护：需要手动把应用加到此列表，否则设备进入睡眠后会自动杀掉应用进程，只有手动开启应用才能恢复运行**
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjamw981fj30ya0f941a.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043147.jpg)
 **通知管理：应用状态有三种：提示、允许、禁止。禁止应用则通知栏不会有任何提醒**
 
 - Flyme OS（魅族）
 
 **自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程无法开启**
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjamwoofoj30z00fkq5p.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043149.jpg)
 
 **通知栏推送：关闭应用通知则收到消息不会有任何展示**
 
 **省电管理： 安全中心里设置省电模式，在【待机耗电管理】中允许应用待机时，保持允许，否则手机休眠或者应用闲置一段时间，无法正常接收消息。**
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjamx6enaj30z00fk77a.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043152.jpg)
 
 - Funtouch OS（VIVO）
 
@@ -64,7 +64,7 @@ tags: [Android]
 - MIUI OS (小米)
 
 **自启动管理：需要把应用加到【自启动管理】列表，否则杀进程或重新开机后进程无法开启**
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjamy3adpj30sg0gv0uu.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043154.jpg)
 
 **通知提示设置：应用默认都是显示通知栏通知，如果关闭，则收到通知也不会提示**
 
@@ -72,7 +72,7 @@ tags: [Android]
 
 **MIUI 7 神隐模式： 允许用户设置后台联网应用，开启后应用即可在后台保持联网，否则应用进入后台时，应用无法正常接收消息。【设置】->【电量和性能】->【神隐模式】**
 
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fqjamz0o69j30z00fk0up.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043157.jpg)
 
 ## 3. 优化推送的初始化和推送token的同步
 我们使用第三方推送平台，最关键的地方在于前两个步骤：
