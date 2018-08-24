@@ -3,7 +3,6 @@ title: Hexo使用笔记
 date: 2017-06-16 09:14:24
 tags: [others]
 ---
-![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043557.jpg)
 
 记录一些 hexo 使用<!-- more -->
 
