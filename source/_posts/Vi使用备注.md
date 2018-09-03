@@ -138,3 +138,9 @@ $ 代表行末等等。
 
 # Vim Cheatsheet
 [Vim 快捷键](http://zjsnowman.com/local/vim.txt)
+
+
+# vim 学习资料
+https://zhuanlan.zhihu.com/vim-video?utm_source=wechat_session&utm_medium=social&utm_oi=938112176465162240
+
+

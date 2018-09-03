@@ -40,3 +40,5 @@ kibana 安装,官网安装,和 elasticsearch 安装一样的版本
 
 
 [elasticsearch 导入导出工具](https://github.com/taskrabbit/elasticsearch-dump)
+[如何通过账号密码导出数据]
+(https://github.com/taskrabbit/elasticsearch-dump/issues/155)
