@@ -33,6 +33,21 @@ tags: [数据分析]
 - %%timeit 跑一段代码的执行时间
 - %time 只跑一次,一行代码
 - %%time 只跑一次,一段代码
+```
+CPU times: user 22.5 s, sys: 6.97 s, total: 29.4 s
+Wall time: 1min 57s
+```
+user -- 表示执行用户代码(内核外)消耗 CPU 时间
+
+sys  -- 该进程在内核中CPU 耗时
+
+所以看 CPU 耗时就看 total 即可,这个是 CPU 总耗时.也就是 user 和 sys 之和
+Wall Time 就是最终总耗时,包括 IO,排队的耗时,也就是感知的总耗时.
+
+Wall Time < CPU  表明进程为计算密集型（CPU bound），利用多核处理器的并行执行优势
+Wall Time ≈ CPU  表明进程为计算密集型，未并行执行
+Wall Time > CPU  表明进程为I/O密集型 （I/O bound），多核并行执行优势并不明显
+
 
 # 导出
 
@@ -72,3 +87,5 @@ python2 -m ipykernel install --user
 
 配置 jupyter 后台运行
 `nohup jupyter-notebook &`
+
+[Centos配置 Jupyter文档,腾讯云官方](https://cloud.tencent.com/developer/labs/lab/10201)
