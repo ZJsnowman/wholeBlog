@@ -10,8 +10,8 @@ tags:
 
 ## 用户和用户组
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fqs5hxw7c6j31kw0q948q.jpg)
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fqs5phv755j31kw0ntajz.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043912.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043831.jpg)
 
 最早是没有 `gshadow`和 `shadow`两个文件的,这两个分别是存放组密码和用户密码的文件.早起组和用户
 密码都是分别放在 `group`和`password`一起的,但是由于这两个文件经常需要被读取来判断当期那用户所属

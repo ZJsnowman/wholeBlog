@@ -3,7 +3,6 @@ title: Hexo使用笔记
 date: 2017-06-16 09:14:24
 tags: [others]
 ---
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanehu6oj30hs07sq40.jpg)
 
 记录一些 hexo 使用<!-- more -->
 
@@ -67,7 +66,7 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 再次打开github查看,就会发现新的大写路径上传上去了.
 
 #### 根本解决办法
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjanfewcdj30g90ck3yz.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043451.jpg)
 将`.deploy_git/.git`下ignorecase=true 改为false.这样git就会记录大小写了.
 因为我这个本身也在git管理中,所以将hexo 根目录下的一个.git目录里面的config文件修改一下.
 
@@ -76,11 +75,11 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 
  ps:这里我 next 版本为5.1.2.在按照官方操作的时候需要补充一点:
  1. 不需要输入 adminApiKey: 'adminApiKey' ,可以删掉.
- 2. 需要在 algilia 再创建一个API Key ![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjanfwhgdj31kw0iymzv.jpg)
+ 2. 需要在 algilia 再创建一个API Key ![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-43512.jpg)
  可以参考[hexo-algolia官方 github](https://github.com/oncletom/hexo-algolia)
 另外关于有些会出现搜索结果跳转不到文章url 显示 yoursite.com.
 原因是因为没有设置 url.设置好 **网站** 的配置文件的 url 参数就可以了.需要时完整的,加上协议头 http
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjangspzpj31bs0cqq3z.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043631.jpg)
 
 ## hexo 添加域名
 https://www.zhihu.com/question/19551906

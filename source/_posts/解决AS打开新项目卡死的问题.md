@@ -7,13 +7,13 @@ tags: [Android]
  分析并解决AS打开项目假死的问题<!-- more -->
 
 ##  现象
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjaou1fzaj314q14maik.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044444.jpg)
 
 ## 原因
 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fqjaovsaspj30k204u74o.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044449.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fqjaoxub73j31cm07o412.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044506.jpg)
 
 
 新打开的项目所需要的 gradle 本地没有，导致要打开该项目，Android Studio 回先去下载所需要的
@@ -23,7 +23,7 @@ gradle 版本。直到下载完毕。
 
 修改gradle-wrapper.properties 所需要的gradle版本 。改成本地已经下载过的gradle版本。
 
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fqjap02420j31ji0qetbc.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044518.jpg)
 
 这是本地具体已经下载过的gradle版本。
 两种办法：

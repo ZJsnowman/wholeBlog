@@ -37,7 +37,7 @@ notify.emails=xxx@xxx.com,xx@xxx.com  # 成功失败后发送邮件
 
 ```
 这里通过引用的方式传入时间参数,这样在 azkaban的 web 界面上就可以直接编辑参数
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fsnia05ny1j31kw0ki0tp.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044120.jpg)
 
 
 这里涉及到 azkaban 一个比较复杂的传参,通过 job 自身支持的参数替换来作为 shell脚本的入参,然后在 shell 脚板中通过\$1,\$2的方式来引用
@@ -98,7 +98,7 @@ elasticdump \
 
 ### 公共参数
 可以定义一个`system.properties`文件,里面定义key-value.
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fspw7cf4vej31g60ic3zp.jpg)
+![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-044124.jpg)
 
 这样多个 job 之间可以共享`system.properties`里面定义的字段.一样也是通过${xxx}的方式在 job 文件中引用.
 

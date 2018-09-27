@@ -182,4 +182,10 @@ where blork can be any string that is not likely to be an install candidate.
  # 闭包
  [这个讲的比较好,帮助理解](http://yunjianfei.iteye.com/blog/2186092)
  具体使用暂时还比较少
+<<<<<<< HEAD
 v
+=======
+
+ # 装饰器
+ [理解 Python 装饰器看这一篇就够了](https://foofish.net/python-decorator.html)
+>>>>>>> 2c4ba909c4adf1f13f7be65cbd36dd553737b5c9
