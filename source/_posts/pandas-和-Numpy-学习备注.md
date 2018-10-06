@@ -115,7 +115,6 @@ np 的聚合函数比python 原生的效率要高.
 其他类似,找到对应的索引
 
 ## Fancy Indexing
-##
 - `np.count_nonzero(x)` 计算 x 中非零元素的个数,方便统计布尔数组中 True 的个数,当然也可以使用 `sum()`
 - `np.any(x==0) VS np.all(x==0)` 前者只要 x 有任何一个满足条件就会返回 True,后者需要 x 全部满足条件才可以  
 
