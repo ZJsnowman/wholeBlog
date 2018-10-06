@@ -104,9 +104,58 @@ print('interface清理读取到 DF,耗时' + str(end - start))
 2. 然后在在第一次优化的基础上直接处理这个一个文件,而不是处理多个小文件
 
 思路:本意是想在 IO 这块提升速度.一个文件只会有两次 IO, 而多个小文件,这 IO 操作太频繁影响处理速度.
-实验证明这种方法意义不大.首先`cat`操作本身需要时间,在这第二步执行结果发现提升非常有限.**暂时结论**
-是不推荐这种方法
+实验证明这种方法意义不大.首先`cat`操作本身需要时间,在这第二步执行结果发现提升非常有限.
+**暂时结论**是不推荐这种方法
 
+## 第三个优化
+在做正则匹配的时候,加一个字符串判断,而不是每行都做正则匹配,当文本很长的时候,正则匹配非常耗时.
+而用 python 原生的`in`来做判断可以提速,非常明显.
+```python
+            if '[request]' in line:
+                request_match = regrex_request.search(line)
+            if '[response]' in line:
+                response_match = regrex_response.search(line)
+            if '[all_cost]' in line:
+                all_cost_match = regrex_all_cost.search(line)
+            if 'send][cost]' in line:
+                channel_cost_match = regrex_channel_cost.search(line)
+```
+
+
+## 第四次优化
+多进程处理.一般 python代码都只使用一个 CPU. 利用`ProcessPoolExecutor`可以轻松实现多进程处理,非常适合计算型任务(Wall Time ≈ CPU Total Time)
+```python
+import concurrent.futures
+with concurrent.futures.ProcessPoolExecutor() as executor:
+    image_files = glob.glob("*.jpg")
+    for image_file, thumbnail_file in zip(image_files, executor.map (make_image_thumbnail, image_files)):  
+
+import globimport osfrom PIL 
+import Image
+def make_image_thumbnail(filename):
+    # 缩略图会被命名为"<original_filename>_thumbnail.jpg"
+    base_filename, file_extension = os.path.splitext(filename)
+    thumbnail_filename = f"{base_filename}_thumbnail{file_extension}"
+
+    # 创建和保存缩略图
+    image = Image.open(filename)
+    image.thumbnail(size=(128, 128))
+    image.save(thumbnail_filename, "JPEG")    
+    return thumbnail_filename# 循环文件夹中所有JPEG图像，为每张图像创建缩略图
+```
+上述方法非常适合下面的任务:
+- 从一堆XML，CSV和JSON文件中解析数据。
+
+- 对大量图片数据做预处理，建立机器学习数据集。
+
+**这里总结一个处理上述任务的一个套路**
+1. 首先获得你想处理的文件（或其它数据）的列表
+
+2. 写一个辅助函数，能够处理上述文件的单个数据
+
+3. 使用for循环调用辅助函数，处理每一个单个数据，一次一个。
+
+学习链接:https://mp.weixin.qq.com/s/6eSQuRa_3Wvq8Nc3zd48Gg
 ## 七个提升 Python性能的好习惯
 - 使用局部变量
 - 减少函数调用次数

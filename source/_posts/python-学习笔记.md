@@ -105,6 +105,15 @@ __author__ = 'ZJsnowman'
 2. Unicode everywhere
 3. Encode later
 
+字符串编码前缀
+- r"xxx"  表示xxx 中的内容不需要转义.比如\n,\t都不需要转义成换行,制表.比如`r".*\[(.*?)\] +- +(.*)"`
+- f"xxx"   表示xxx中有表达式,会通过表示式的值填充进去
+```python
+base_filename, file_extension = os.path.splitext(filename)
+thumbnail_filename = f"{base_filename}_thumbnail{file_extension}"
+```
+
+
 
 ## 函数参数
 python 有四种参数类型
@@ -173,6 +182,10 @@ where blork can be any string that is not likely to be an install candidate.
  # 闭包
  [这个讲的比较好,帮助理解](http://yunjianfei.iteye.com/blog/2186092)
  具体使用暂时还比较少
+<<<<<<< HEAD
+v
+=======
 
  # 装饰器
  [理解 Python 装饰器看这一篇就够了](https://foofish.net/python-decorator.html)
+>>>>>>> 2c4ba909c4adf1f13f7be65cbd36dd553737b5c9
