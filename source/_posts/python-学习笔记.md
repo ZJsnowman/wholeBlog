@@ -31,7 +31,7 @@ tags: [数据分析]
 
 # Python 高级特性
 ## Python列表生成式
-```
+>```
 >>> [x * x for x in range(1, 11)]
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
@@ -48,28 +48,25 @@ tags: [数据分析]
 >>> [k + '=' + v for k, v in d.items()]
 ['y=B', 'x=A', 'z=C']
 ```
-
 多次循环
 ```
 >>> [m + n for m in 'ABC' for n in 'XYZ']
 ['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
-
 ```
-
 ## 迭代器和生成器
 [廖老师-高级特性](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143178254193589df9c612d2449618ea460e7a672a366000)
 
-## Python yidld 使用
+# Python yidld 使用
 https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851243000
 
 
-
-# Xml 解析
+# Python 数据解析
+## Xml 解析
 [点我查看](http://zjsnowman.com/local/Xml%E8%A7%A3%E6%9E%90)
 
 
 
-# Python 字符串前缀
+## Python
 - python原生字符串
 
 字符串无需再赘言，原生字符串可以在字符串之前加上一个r或者R来表示，例如r'\nThis is a raw string'。原生字符串不会对字符串进行任何特殊处理，例如r'\nThis is a raw string'中的\n不会被转义处理，而是直接代表\和n两个字符。
@@ -77,11 +74,16 @@ https://www.liaoxuefeng.com/article/001373892916170b88313a39f294309970ad53fc6851
 *这个特性在正则表达式中非常好用,来应对反斜杠问题*
 
 
+## Python 爬虫
+[参考这个](http://wiki.jikexueyuan.com/project/python-crawler-guide/)
+
+### 关于正则表达式贪婪与非贪婪
+[参考这个](http://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p07_specify_regexp_for_shortest_match.html)
+这里非贪婪实际上就是最短匹配模式.贪婪则是尽可能长长的匹配.把这两者和路径长度联系起来理解
 
 
 
-# Python 头部声明,编码声明
-
+### Python 头部声明,编码声明
 https://www.python.org/dev/peps/pep-0263/
 ```python
 __author__ = 'ZJsnowman'
@@ -89,7 +91,7 @@ __author__ = 'ZJsnowman'
 ```
 在Pycharm 中文件最开头需要加入上述语句,不然中文注释会有问题.
 
-# Python 编码问题
+### Python 编码问题
 - ASCII，Unicode 和 UTF-8 之间的关系
 
 记住一句话:UTF-8 是 Unicode 的实现方式之一。
@@ -113,7 +115,7 @@ thumbnail_filename = f"{base_filename}_thumbnail{file_extension}"
 
 
 
-# 函数参数
+## 函数参数
 python 有四种参数类型
 - 必选参数
 - 默认参数
@@ -154,7 +156,7 @@ For pip < 9.0 use
 where blork can be any string that is not likely to be an install candidate.
 
 
-# Python 中的 if \_\_name\_\_ == '\_\_main\_\_' 该如何理解
+# Python 中的 if \__name\__ == '\__main\__' 该如何理解
 **如果模块是被直接运行的，则代码块被运行，如果模块是被导入的，则代码块不被运行。**
 具体参考
  http://blog.konghy.cn/2017/04/24/python-entry-program/
@@ -182,6 +184,7 @@ where blork can be any string that is not likely to be an install candidate.
  具体使用暂时还比较少
 
 
+
+
  # 装饰器
  [理解 Python 装饰器看这一篇就够了](https://foofish.net/python-decorator.html)
-
