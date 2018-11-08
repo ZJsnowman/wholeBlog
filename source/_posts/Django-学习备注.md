@@ -1,10 +1,10 @@
 ---
-title: Django 学习备注
+title: Django 开发指南
 date: 2017-11-29 13:56:44
 tags: [数据分析]
 ---
 
-Django 学习备注<!--more-->
+Django学习过程的一些个人总结<!--more-->
 
 # 创建应用
 
