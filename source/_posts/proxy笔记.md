@@ -1,7 +1,7 @@
 ---
-title: Proxy笔记
+title: 代理
 date: 2017-08-04 20:49:19
-tags: [others]
+tags: [others，科学上网]
 ---
 关于墙你需要知道的一切<!--more-->
 ## 墙的原理

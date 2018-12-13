@@ -35,7 +35,7 @@ git@github.com:ZJsnowman/ZJsnowman.github.io.git
 ## 想在其他电脑上同步修改博客，可以使用下列步骤：
 
 1. 使用git clone git@github.com:ZJsnowman/wholeBlog.git拷贝仓库
-2. 在仓库中依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令，因为已经有 hexo 环境了，只需要
+2. 在仓库中依次执行下列指令：`npm install -g hexo`、`npm install`、`npm install hexo-deployer-git`（记得，不需要hexo init这条指令，因为已经有 hexo 环境了，只需要
 安装一下 node 依赖即可。）。
 
 ## hexo 草稿
