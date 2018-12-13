@@ -39,20 +39,25 @@ git 管理多个 ssh key<!--more-->
 在windows下新建一个txt文本，然后将名字后缀一起改成config即可
 在bash下的话直接` touch config ` 即可。
 添加一下内容
+```
+# gitlab
+Host git.iboxpay.com
+HostName git.iboxpay.com    
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitlab_iboxpay
+User zhangjun
 
-        # gitlab
-        Host git.iboxpay.com
-            HostName git.iboxpay.com  //这里填你们公司的git网址即可
-            PreferredAuthentications publickey
-            IdentityFile ~/.ssh/id_rsa_gitlab
-            User zhangjun
-
-        # github
-        Host github.com
-            HostName github.com
-            PreferredAuthentications publickey
-            IdentityFile ~/.ssh/id_rsa_github
-            User ZJsnowman
+# github
+Host github.com
+HostName github.com
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+User ZJsnowman
+```
 
 - 在github和gitlab上添加公钥即可，这里不再多说。
 
