@@ -66,7 +66,6 @@ hexo,之后觉得小写不好看,改成了Hexo.这样改完后,就会出现本�
 再次打开github查看,就会发现新的大写路径上传上去了.
 
 #### 根本解决办法
-![](https://blog-image-1257302654.cos.ap-guangzhou.myqcloud.com/2018-08-24-043451.jpg)
 将`.deploy_git/.git`下ignorecase=true 改为false.这样git就会记录大小写了.
 因为我这个本身也在git管理中,所以将hexo 根目录下的一个.git目录里面的config文件修改一下.
 
