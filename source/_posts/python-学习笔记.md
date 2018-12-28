@@ -170,21 +170,42 @@ where blork can be any string that is not likely to be an install candidate.
 [具体区别](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143167793538255adf33371774853a0ef943280573f4d000)
 
 # python注意点
+
 只有1个元素的tuple定义时必须加一个逗号,来消除歧义：
+
 ```python
+
 >>> t = (1,)
 >>> t
 (1,)
+
 ```
- `python 整数加一个小数点 比如:0.` 加一个小数点，这也是一种转换为浮点型的方式，作用等于float(0)
+`python 整数加一个小数点 比如:0.` 加一个小数点，这也是一种转换为浮点型的方式，作用等于float(0)
 
+ ## 闭包
 
- # 闭包
  [这个讲的比较好,帮助理解](http://yunjianfei.iteye.com/blog/2186092)
  具体使用暂时还比较少
 
+## 装饰器
 
-
-
- # 装饰器
  [理解 Python 装饰器看这一篇就够了](https://foofish.net/python-decorator.html)
+
+ ## Python is None VS == None
+ 
+```
+is always returns True if it compares the same object instance
+
+Whereas == is ultimately determined by the __eq__() method
+
+>>> class foo(object):
+def __eq__(self, other):
+    return True
+
+>>> f = foo()
+>>> f == None
+True
+>>> f is None
+False
+````
+
