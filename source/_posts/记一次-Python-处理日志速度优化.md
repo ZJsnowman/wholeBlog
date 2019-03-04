@@ -123,7 +123,9 @@ print('interface清理读取到 DF,耗时' + str(end - start))
 
 
 ## 第四次优化
-多进程处理.一般 python代码都只使用一个 CPU. 利用`ProcessPoolExecutor`可以轻松实现多进程处理,非常适合计算型任务(Wall Time ≈ CPU Total Time)
+
+多进程处理.一般 python代码都只使用一个 CPU. 利用`ProcessPoolExecutor`可以轻松实现多进程处理,非常适合计算型任务(Wall Time ≈ CPU Total Time).关于 IO 密集和计算密集参考[Python IO/计算密集](https://zjsnowman.com/2017/09/25/jupyter-%E4%BD%BF%E7%94%A8%E5%A4%87%E6%B3%A8/#%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4)
+
 ```python
 import concurrent.futures
 with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -143,7 +145,9 @@ def make_image_thumbnail(filename):
     image.save(thumbnail_filename, "JPEG")    
     return thumbnail_filename# 循环文件夹中所有JPEG图像，为每张图像创建缩略图
 ```
+
 上述方法非常适合下面的任务:
+
 - 从一堆XML，CSV和JSON文件中解析数据。
 
 - 对大量图片数据做预处理，建立机器学习数据集。
@@ -155,8 +159,10 @@ def make_image_thumbnail(filename):
 
 3. 使用for循环调用辅助函数，处理每一个单个数据，一次一个。
 
-学习链接:https://mp.weixin.qq.com/s/6eSQuRa_3Wvq8Nc3zd48Gg
+学习链接:<https://mp.weixin.qq.com/s?src=11&timestamp=1551663000&ver=1463&signature=6Nu6FISE-fxdHgulsA4eVKDK-z48c9XWEo3ESnPGysSixYC29T7aDGEzEHVRrCcpma-f1jFKwOfqrMa7dYwEpg0YCIk9feqckoc5HbN30mi2jZ7T08g4-4Zj16dP-Nan&new=1>
+
 ## 七个提升 Python性能的好习惯
+
 - 使用局部变量
 - 减少函数调用次数
 - 采用映射替代条件查找
