@@ -28,15 +28,18 @@ tags: [数据分析]
 [暂时参考这个,日后补充](https://classroom.udacity.com/nanodegrees/nd002-cn-basic/parts/084fcc90-54f8-4d13-9e97-ce8e80e74ae1/modules/e95ca0b1-2716-4f45-bf4b-781653e885e5/lessons/b15ba0a2-015d-4c5a-87ae-9efba2cabb43/concepts/256cdd36-17d4-442a-a033-7c64ce83f7f8)
 
 ## 魔法命令
+
 - %run  跑外部 python 代码
 - %timeit 跑一行代码的执行时间,会跑多次取平均值
 - %%timeit 跑一段代码的执行时间
 - %time 只跑一次,一行代码
 - %%time 只跑一次,一段代码
-```
+
+```text
 CPU times: user 22.5 s, sys: 6.97 s, total: 29.4 s
 Wall time: 1min 57s
 ```
+
 user -- 表示执行用户代码(内核外)消耗 CPU 时间
 
 sys  -- 该进程在内核中CPU 耗时
@@ -47,7 +50,6 @@ Wall Time 就是最终总耗时,包括 IO,排队的耗时,也就是感知的总�
 Wall Time < CPU  表明进程为计算密集型（CPU bound），利用多核处理器的并行执行优势
 Wall Time ≈ CPU  表明进程为计算密集型，未并行执行
 Wall Time > CPU  表明进程为I/O密集型 （I/O bound），多核并行执行优势并不明显
-
 
 # 导出
 
