@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
-    "hexo": "^3.8.0",
+    "hexo": "^3.9.0",
     "hexo-algolia": "^1.2.3",
     "hexo-blog-encrypt": "1.1.*",
-    "hexo-deployer-git": "git+ssh://git@github.com/hexojs/hexo-deployer-git.git",
+    "hexo-deployer-git": "^2.0.0",
     "hexo-fs": "^0.2.2",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-baidu-sitemap": "^0.1.2",
